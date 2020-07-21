@@ -15,6 +15,61 @@ block content
                 +e.A(href="/") Главная
                 +e.SPAN.separator
                 span Мебель на заказ
+        +b.SECTION.page-intro
+            +e.content
+                .container
+                    +e.H2.title 
+                        span Мебель сделанная с душой специально для вас
+            img(src="assets/images/intro/made-furniture.jpg", alt="")
+        +b.SECTION.advantages
+            .container
+                +b.H3.title Почему у нас стоит заказывать мебель
+                +e.row
+                    +b.advantage
+                        +e.P.count 01
+                        p Несём ответственность за качество
+                    +b.advantage
+                        +e.P.count 02
+                        p Изготовление стандартной и нестандартной мебели-можете поручить нам!
+                    +b.advantage
+                        +e.P.count 03
+                        p Индивидуальный подход к каждому проекту
+        +b.SECTION.icons
+            .container
+                +b.H3.title РИФ.UG — ваш качественный подрядчик
+                +e.row
+                    +e.col
+                        +b.icon-item
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-5')
+                            +e.P.title Дизайн как призвание
+                            +e.desc
+                                p У нас идейные специалисты, которым есть что предложить
+                    +e.col
+                        +b.icon-item
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-6')
+                            +e.P.title Когда всё сочетается
+                            +e.desc
+                                p Мы подберем для вас магазин и мебель
+                    +e.col
+                        +b.icon-item
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-7')
+                            +e.P.title Две версии дизайна
+                            +e.desc
+                                p Выберите рукописный или 3D макет 
+                    +e.col
+                        +b.icon-item
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-8')
+                            +e.P.title Качество работ
+                            +e.desc
+                                p Вы будете довольны результатом
         include ../includes/modules/answer
         include ../includes/modules/footer
 

@@ -8,13 +8,59 @@ block variables
 
 block content
     // WEBSITE
-    +b.content.page-index
+    +b.content
         include ../includes/modules/header
         +b.SECTION.breadcrumbs
             .container
                 +e.A(href="/") Главная
                 +e.SPAN.separator
                 span Строительство домов
+
+        +b.SECTION.page-intro
+            +e.content
+                .container
+                    +e.H2.title 
+                        span Ваш дом —<br> Ваша крепость
+            img(src="assets/images/intro/construction.jpg", alt="")
+        +b.SECTION.page-description(class="--gray")
+            .container
+                +b.section-description
+                    +e.row
+                        +e.col
+                            +b.H3.title(class="--strong hidden-sm") Строим дома под ключ в Краснодаре больше трёх лет   
+                        +e.col
+                            .typography.text-columns
+                                p Надёжность и долговечность — главные критерии при строительстве домов. Поэтому с нами работают специалисты выского уровня. Мы дорожим своей репутацией и прислушиваемся к вашим пожеланиям. 
+                                p Детальная проработка сметы и чертежей дома помогут достичь необходимого результата. Наша команда готова ответить на любые вопросы.
+        +b.SECTION.stages
+            .container
+                +b.H3.title(class="--center-decoration") 
+                    span Этапы воздведения дома
+                +e.row
+                    +e.col
+                        +b.advantage
+                            +e.P.count 01
+                            p Разбивка и вынос осей дома, разработка грунта и заливка фундамента
+                    +e.col
+                        +b.advantage
+                            +e.P.count 02
+                            p Возведение<br> стен
+                    +e.col
+                        +b.advantage
+                            +e.P.count 03
+                            p Монтаж<br> кровли
+                    +e.col
+                        +b.advantage
+                            +e.P.count 04
+                            p Устройство<br> перекрытий
+                    +e.col
+                        +b.advantage
+                            +e.P.count 05
+                            p Внутренние<br> отделочные работы
+                    +e.col
+                        +b.advantage
+                            +e.P.count 06
+                            p Заборы и<br> ограждения
         include ../includes/modules/answer
         include ../includes/modules/footer
 
