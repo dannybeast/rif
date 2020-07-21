@@ -1,0 +1,154 @@
+// header style
+
+.header {
+  position: relative;
+  z-index: 99991;
+  $parent: &;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include lg-block() {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @include sm-block() {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__col {
+    width: 33.3333%;
+
+    @include sm-block() {
+      width: 50%;
+
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .separator {
+      width: 1px;
+      height: 35px;
+      flex-shrink: 0;
+      display: block;
+      background: rgba(#fff, 0.3);
+    }
+
+    & > li {
+      margin: 0 15px;
+
+      @include md-block() {
+        margin: 0 10px;
+      }
+
+      & > a {
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        border-bottom: 1px dashed transparent;
+
+        @include md-block() {
+          font-size: 14px;
+        }
+
+        &:hover {
+          border-color: inherit;
+        }
+
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  .language-module {
+    &__link {
+      &:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__nav {
+    @include lg-block() {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    a {
+      font-weight: 700;
+      color: #091361;
+      font-size: 15px;
+      border-bottom: 1px dashed transparent;
+
+      @include xl-block() {
+        font-size: 14px;
+      }
+
+      &:hover {
+        border-color: inherit;
+      }
+    }
+
+    li {
+      margin: 0 20px;
+
+      @include xl-block() {
+        margin: 0 15px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .nav-button {
+    display: none;
+    float: right;
+    background: transparent;
+
+    @include lg-block() {
+      display: flex;
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    margin-right: 30px;
+    width: 100%;
+    max-width: 177px;
+    display: block;
+
+    @include md-block() {
+      max-width: 150px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}

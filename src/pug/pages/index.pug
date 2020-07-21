@@ -1,0 +1,16 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Риф.юг';
+    - var description = '';
+    - var pageName = 'index';
+
+
+block content
+    // WEBSITE
+    +b.content.page-index
+        
+        include ../includes/modules/footer
+
+block script
+    script(src="assets/js/app.js")
