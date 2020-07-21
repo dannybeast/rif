@@ -23,7 +23,7 @@ import masks from "./js/modules/inputmasks";
 import sliders from "./js/modules/sliders";
 import Tabs from "./js/modules/tabs";
 import Notice from "./js/modules/notifications";
-
+import { scrollTo } from "./js/modules/scrollTo";
 document.addEventListener("DOMContentLoaded", function() {
   animations();
   // Accordion
@@ -31,8 +31,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const newAccordion = new Accordion(e);
     newAccordion;
   }
+  masks();
   sliders();
   new Modal();
-  mobileNavigation();
-  hideLoader();
 });
+
+window.onload = function() {
+  setTimeout(() => {
+    mobileNavigation();
+    if (document.querySelector(".js-scrollTo-answer")) {
+      scrollTo(".js-scrollTo-answer", ".answers__block", "0");
+    }
+  }, 1000);
+  hideLoader();
+};

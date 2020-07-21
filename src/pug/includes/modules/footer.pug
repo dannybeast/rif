@@ -1,3 +1,48 @@
 +b.FOOTER.footer
   .container
-    
+    +e.A(href="/" class="logo")
+      img(src="assets/images/logo/logo.svg", alt="Rif.ug")
+    +e.row
+      +e.col
+        +b.contacts-block
+          +e.section
+            p 
+              strong
+                a(href="tel:+79282373555") +7 (928) 237-35-55 <span>(Отдел продаж)</span>
+            p 
+              strong
+                a(href="tel:+79298400014") +7 (929) 840-00-14 <span>(Сотрудничество)</span>
+          +e.section
+            p График работы:
+            p 
+              strong с 9:00 до 19:00
+          +e.section
+            p Почта:
+            p 
+              strong
+                a(href="mailto:info@rif.ug") info@rif.ug
+          +e.section
+            p Мы в соц сетях:
+            +b.UL.social
+              +e.LI
+                +e.A(href="#" target="_blank")
+                  svg.svg-icon
+                    use(href='assets/icons/sprite.svg#icon-vk')
+              +e.LI
+                +e.A(href="#" target="_blank")
+                  svg.svg-icon
+                    use(href='assets/icons/sprite.svg#icon-instagram')
+      +e.col
+        include ./_nav
+      +e.col.hidden-sm
+        +b.address-module
+          +e.P.title Адрес нашего офиса
+          p г.Краснодар, Шоссе Нефтяников 22/1
+  +e.bottom
+    .container
+      +e.P.copyright © РИФЮГ 2020
+      +e.UL.bottom-links
+        li.hidden-sm
+          a(href="#") Результаты проведения СОУТ
+        li
+          a(class="js-modal" data-modal="policy") Политика конфиденциальности

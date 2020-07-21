@@ -1,0 +1,21 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Риф.юг - Забота о том, что вам дорого';
+    - var description = '';
+    - var pageName = 'smart-house';
+
+
+block content
+    // WEBSITE
+    +b.content.page-index
+        include ../includes/modules/header
+        +b.SECTION.breadcrumbs
+            .container
+                +e.A(href="/") Главная
+                +e.SPAN.separator
+                span Умный дом
+        include ../includes/modules/footer
+
+block script
+    script(src="assets/js/app.js")

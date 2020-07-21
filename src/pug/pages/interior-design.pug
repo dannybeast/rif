@@ -1,0 +1,22 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Риф.юг - Уют начинается с интерьера в доме';
+    - var description = '';
+    - var pageName = 'interior-design';
+
+
+block content
+    // WEBSITE
+    +b.content.page-index
+        include ../includes/modules/header
+        +b.SECTION.breadcrumbs
+            .container
+                +e.A(href="/") Главная
+                +e.SPAN.separator
+                span Дизайн интерьера
+        include ../includes/modules/answer
+        include ../includes/modules/footer
+
+block script
+    script(src="assets/js/app.js")

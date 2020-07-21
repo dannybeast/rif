@@ -1,0 +1,16 @@
++b.SECTION.answers
+  .container
+    +e.block
+      +e.row
+        +e.content
+          +e.H3.title Возникли вопросы?
+          +e.desc
+            p Закажите обратный звонок и мы перезвоним вам в рабочее время
+        +e.FORM.form
+          .field
+            label Как к вам обращаться
+            input(type="text" name="name")
+          .field
+            label Ваш контактный номер
+            input(type="text" name="phone" class="js-phone-mask" placeholder="+7 (   ) ")
+          +b.BUTTON.btn(class="--neutral-primary") Получить консультацию

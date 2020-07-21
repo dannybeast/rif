@@ -1,23 +1,21 @@
 .btn {
-  padding: 14px 30px;
+  padding: 12px 30px;
   color: $neutral-primary;
   background-color: $default-color;
-  font-size: 14px;
+  font-size: 16px;
   font-family: $mainFont;
   cursor: pointer;
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   vertical-align: top;
   text-decoration: none;
   transition: all 0.1s ease;
   position: relative;
+  font-weight: 700;
   $i-size: 16px;
   $parent: &;
-  border-radius: 5px;
 
-  @include sm-block() {
-    padding: 14px 25px;
-  }
   svg,
   img {
     width: 17px;
@@ -32,11 +30,11 @@
   }
 
   // Colors
-  &--line {
-    border: solid 2px $primary-color;
-    color: $warning-color;
+  &--neutral-primary {
+    background: $neutral-primary;
+    color: #fff;
     &:hover {
-      background-color: $primary-color;
+      background: darken($neutral-primary, 10%);
       color: #fff;
     }
   }
@@ -44,13 +42,10 @@
 
   // Sizes
   &--size-md {
-    font-size: 26px;
-    padding-top: 0;
-    padding-bottom: 0;
-    line-height: 1;
-    height: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
+    height: 60px;
+    @include sm-block() {
+      height: 50px;
+    }
   }
   //
   &:active {

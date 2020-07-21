@@ -1,49 +1,3 @@
-.form-fields {
-  &__row {
-    @include row-flex();
-    margin-left: -$offset_one_side * 2;
-    margin-right: -$offset_one_side * 2;
-
-    @include lg-block() {
-      margin-left: -$offset_one_side;
-      margin-right: -$offset_one_side;
-    }
-
-    &:last-child {
-      margin-bottom: -20px;
-    }
-
-    &:last-child {
-      margin-top: 30px;
-      align-items: center;
-
-      @include sm-block() {
-        margin-top: 0;
-      }
-    }
-  }
-
-  &__col {
-    margin-left: $offset_one_side * 2;
-    margin-right: $offset_one_side * 2;
-    flex: 1;
-    margin-bottom: 20px;
-
-    @include lg-block() {
-      margin-left: $offset_one_side;
-      margin-right: $offset_one_side;
-    }
-
-    @include sm-block() {
-      flex: auto;
-    }
-  }
-
-  &__captcha {
-    text-align: center;
-  }
-}
-
 // FORM STYLES
 
 // buttons, submit
@@ -130,15 +84,15 @@ select[multiple] {
 
   &:after {
     content: "";
-    width: 9px;
-    height: 15px;
-    background: svg-load("../icons/next.svg", fill=$primary-color);
+    width: 13px;
+    height: 6px;
+    background: svg-load("../icons/select-after.svg", fill=$primary-color);
     background-size: contain;
     background-repeat: no-repeat;
     display: block;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%) rotate(90deg);
+    transform: translateY(-50%);
     right: 15px;
     pointer-events: none;
   }
@@ -188,42 +142,30 @@ textarea {
   width: 100%;
   padding-left: 15px;
   height: $field-height;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   overflow: hidden;
   transition: all 0.2s ease;
-  background: #dceaf4;
+  background: #fff;
+  @include lg-block() {
+    height: 50px;
+    font-size: 12px;
+  }
 
   &:last-child {
     margin-bottom: 0;
   }
 
   &::placeholder {
-    color: rgba($primary-color, 0.3);
+    color: $gray;
   }
 
   &:hover {
-    border-color: rgba($primary-color, 0.3);
+    border-color: #000;
   }
 
   &:focus {
-    border-color: rgba($primary-color, 0.3);
-  }
-
-  &.field-stroke {
-    border: none;
-    background: transparent;
-    padding-left: 0;
-    font-size: 18px;
-    height: 35px;
-    border-radius: 0;
-    border-bottom: 2px solid #cddae2;
-  }
-
-  &.field-border {
-    background: #fff;
-    color: rgba(#274f6e, 0.6);
-    border-color: #b4d0df !important;
+    border-color: #000;
   }
 }
 
@@ -245,23 +187,6 @@ input[type="color"] {
   position: relative;
   $parent: &;
 
-  &--subtext {
-    input {
-      padding-right: 35px;
-    }
-
-    #{$parent}__subtext {
-      position: absolute;
-      top: 50%;
-      color: #9b9fcb;
-      font-size: 13px;
-      font-style: italic;
-      font-weight: 600;
-      right: 0;
-      transform: translateY(-50%);
-    }
-  }
-
   .messages {
     margin: 5px 0 0 0;
     font-size: 12px;
@@ -269,41 +194,8 @@ input[type="color"] {
 
   label:not(.select) {
     margin-bottom: 8px;
-
-    br {
-      @include sm-block() {
-        display: none;
-      }
-    }
-  }
-
-  &__group {
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-between;
-
-    .select {
-      flex-shrink: 0;
-
-      select {
-        border-color: transparent !important;
-      }
-    }
-
-    & > * {
-      &:first-child {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-      }
-
-      &:last-child {
-        border-top-right-radius: $field-radius;
-        border-bottom-right-radius: $field-radius;
-        border-top-left-radius: 0 !important;
-        border-bottom-left-radius: 0 !important;
-        margin-left: 15px;
-      }
-    }
+    font-weight: 400;
+    color: #000;
   }
 
   &--error {
@@ -323,73 +215,14 @@ input[type="color"] {
       }
     }
   }
-
-  &--row {
-    display: flex;
-    margin-bottom: 15px;
-
-    @include sm-block() {
-      flex-wrap: wrap;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    input {
-      margin: 0;
-    }
-
-    select,
-    .select {
-      width: 100%;
-      text-transform: uppercase;
-    }
-
-    label:not(.select) {
-      margin-right: 15px !important;
-      margin-bottom: 0;
-      margin-top: 0 !important;
-      width: 160px;
-      flex-shrink: 0;
-      font-size: 18px;
-      font-weight: 500;
-      padding-top: 12px;
-
-      @include sm-block() {
-        width: 100%;
-        font-size: 16px;
-        margin-bottom: 10px;
-        padding-top: 0;
-      }
-    }
-  }
-
-  &--row-space {
-    padding-left: 160px+15px;
-    margin: 15px 0;
-
-    @include sm-block() {
-      padding-left: 0;
-    }
-  }
 }
 
 input[readonly],
 select[readonly],
 textarea[readonly] {
-  background-color: $border-light;
   color: $neutral-primary;
   border-color: $field-border-color;
 }
-
-// input:invalid,
-// textarea:invalid,
-// select:invalid {
-//     color: $field-color-danger !important;
-//     border-color: $field-color-danger !important;
-// }
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;

@@ -1,0 +1,11 @@
+#callme.modal
+  +b.modal-inner(class="--md")
+    +e.close.js-close-modal
+      svg.svg-icon
+        use(href='assets/icons/sprite.svg#icon-cross')
+    +b.FORM.callme-form
+      +e.H3.title Введите свой номер телефона и получите БЕСПЛАТНЫЙ расчет
+      +e.field
+        input(type="text" name="phone" class="js-phone-mask" placeholder="+7 (   ) ")
+        +b.BUTTON.btn(class="--neutral-primary") Получить бесплатный расчет
+      

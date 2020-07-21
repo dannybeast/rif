@@ -1,0 +1,22 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Риф.юг - Ваш дом — Ваша крепость';
+    - var description = '';
+    - var pageName = 'construction';
+
+
+block content
+    // WEBSITE
+    +b.content.page-index
+        include ../includes/modules/header
+        +b.SECTION.breadcrumbs
+            .container
+                +e.A(href="/") Главная
+                +e.SPAN.separator
+                span Строительство домов
+        include ../includes/modules/answer
+        include ../includes/modules/footer
+
+block script
+    script(src="assets/js/app.js")

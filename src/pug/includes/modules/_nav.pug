@@ -1,8 +1,15 @@
-li
-  a(href="#") Clients
-li
-  a(href="#") Partners
-li
-  a(href="#") About Us
-li
-  a(href="#") FAQ
++b.UL
+  +e.LI(class=( pageName === "repairs" ? " is-active" : undefined))
+    +e.A(href="repairs.html") Ремонт
+  +e.LI(class=( pageName === "interior-design" ? " is-active" : undefined))
+    +e.A(href="interior-design.html") Дизайн интерьера
+  +e.LI(class=( pageName === "construction" ? " is-active" : undefined))
+    +e.A(href="construction.html") Строительство домов
+  +e.LI(class=( pageName === "made-furniture" ? " is-active" : undefined))
+    +e.A(href="made-furniture.html") Мебель на заказ
+  +e.LI(class=( pageName === "smart-house" ? " is-active" : undefined))
+    +e.A(href="smart-house.html") Умный дом
+  +e.LI(class=( pageName === "about" ? " is-active" : undefined))
+    +e.A(href="about.html") О нас
+  +e.LI(class=( pageName === "contacts" ? " is-active" : undefined))
+    +e.A(href="contacts.html") Контакты

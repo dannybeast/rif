@@ -9,7 +9,296 @@ block variables
 block content
     // WEBSITE
     +b.content.page-index
-        
+        include ../includes/modules/header
+
+        // Main Slider
+        +b.SECTION.main-slider
+            .swiper-container
+                .swiper-wrapper
+                    .swiper-slide
+                        +b.main-slide
+                            +e.overlay
+                                .container
+                                    +e.content
+                                        +e.H2.title(class="--large") Создаём ваши мечты под ключ
+                                        +e.desc
+                                            p Ремонт помещений, создание дизайн-проекта или постройка дома под ключ. Нам это под силу
+                                        +e.bottom
+                                            +b.A( class="btn --neutral-primary js-scrollTo-answer") Бесплатная консультация
+                            img(src="assets/images/main-slider/1.jpg", alt="")
+                    .swiper-slide
+                        +b.main-slide
+                            +e.overlay
+                                .container
+                                    +e.content
+                                        +e.H2.title Ремонт бывает<br> с таким завершением
+                                        +e.desc
+                                            p Сделаем для вас ремонт в срок и качественно. Вам не очем беспокоится, семье понравится.
+                                        +e.bottom
+                                            +b.A(class="btn --neutral-primary js-scrollTo-answer") Бесплатная консультация
+                            img(src="assets/images/main-slider/2.jpg", alt="")
+                    .swiper-slide
+                        +b.main-slide
+                            +e.overlay
+                                .container
+                                    +e.content
+                                        +e.H2.title Уют начинается<br> с интерьера в доме
+                                        +e.desc
+                                            p Разработаем для вас дизайн помещения с учетом пожеланий. Нам под силу реализовать ваши мечты
+                                        +e.bottom
+                                            +b.A(class="btn --neutral-primary js-scrollTo-answer") Бесплатная консультация
+                            img(src="assets/images/main-slider/3.jpg", alt="")
+                    .swiper-slide
+                        +b.main-slide
+                            +e.overlay
+                                .container
+                                    +e.content
+                                        +e.H2.title Ваш дом —<br> Ваша крепость
+                                        +e.desc
+                                            p Строительство современных домов
+                                        +e.bottom
+                                            +b.A(href="#" class="btn --neutral-primary") Бесплатная консультация
+                            img(src="assets/images/main-slider/4.jpg", alt="")
+                +e.nav
+                    .container
+                        +b.slider-nav-module
+                            .swiper-prev
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-arrow')
+                            .swiper-next
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-arrow')
+                            +b.slider-counter
+                                p
+                                    big
+                                        span 04 
+                                        | / 
+                                    | 04
+                        .slider-dots
+        +b.SECTION.advantages
+            .container
+                +b.H3.title Почему выбирают нас
+                +e.row
+                    +b.advantage
+                        +e.P.count 01
+                        p Точно<br> в срок
+                    +b.advantage
+                        +e.P.count 02
+                        p Качество+<br> Профессионализм
+                    +b.advantage
+                        +e.P.count 03
+                        p Надежность
+                    +b.advantage
+                        +e.P.count 04
+                        p Дизайн интерьера<br> в подарок
+        +b.overlay-gray
+            +b.SECTION.services
+                .container
+                    +b.section-description
+                        +e.row
+                            +e.col
+                                +b.H3.title Наши услуги
+                            +e.col
+                                .typography.text-columns
+                                    p Наша компания оказывает полный комлекс услуг в сфере создания, обустройства и ремонта помещений. 
+                                    p Опыт и надежность — наши основные преимущества перед конкурентами.
+                                    p.hidden-sm Ваши пожелания учитываются на каждом этапе. Мы придерживаемся гибкого подхода к каждому клиенту. Ваши желания будут услышаны.
+                    +b.design-interior
+                        +e.image
+                            img(src="assets/images/design.jpg", alt="")
+                        +b.H3.title(class="--before-line") Дизайн интерьера
+                        +b.service-title-block
+                            +e.H3.title Дизайн интерьера
+                            img(src="assets/images/design-sm.jpg", alt="")
+                    +b.ideas
+                        +b.H3.title Мы воплотим<br> ваши идеи в реальность
+                        +e.row
+                            +e.col
+                                .typography
+                                    p Вам хочется создать дом с подходящей обстановкой. Вместе с нами это будет просто. Обратитесь за консультацией и наш дизайнер спроектирует дизайн вашей мечты.
+                            +e.col
+                                .typography
+                                    p Создайте свой уют, который по достоинству оценят члены семьи. Этого можно достичь с помощью баланса цвета и форм. Наши дизайнеры имеют большой опыт.
+                            +e.col
+                                .typography
+                                    p Вам хочется создать дом с подходящей обстановкой. Вместе с нами это будет просто. Обратитесь за консультацией и наш дизайнер спроектирует дизайн вашей мечты.
+            +b.SECTION.repairs
+                .container
+                    +b.section-description
+                        +e.row
+                            +e.col
+                                +e.H3.title Ремонт
+                                +b.service-title-block
+                                    +e.H3.title Ремонт
+                                    img(src="assets/images/repairs-sm.jpg", alt="")
+                                +e.desc
+                                    p Перед осуществлением ремонта, наши специалисты бесплатно приедут на объект для того, чтобы оценить:
+                            +e.col
+                                +b.repairs-items
+                                    +b.repairs-item
+                                        p Техническое<br> состояние
+                                    +b.repairs-item
+                                        p Возраст и состояние внутренних конструкций
+                                    +b.repairs-item
+                                        p Соответствие интерьера модным трендам
+                                    +b.repairs-item
+                                        p Изношенность инженерных сетей
+                    +b.repairs-packages
+                        +e.row
+                            +e.col
+                                +b.repairs-package
+                                    +e.image
+                                        img(src="assets/images/repairs-packages/1.jpg", alt="")
+                                    +e.bottom
+                                        +e.P.title Базовый
+                                        +e.P.price 9000 руб. за м<sup>2</sup>
+                            +e.col
+                                +b.repairs-package
+                                    +e.image
+                                        img(src="assets/images/repairs-packages/2.jpg", alt="")
+                                    +e.bottom
+                                        +e.P.title Комфорт
+                                        +e.P.price 11000 руб. за м<sup>2</sup>
+                            +e.col
+                                +b.repairs-package
+                                    +e.image
+                                        img(src="assets/images/repairs-packages/3.jpg", alt="")
+                                    +e.bottom
+                                        +e.P.title Премиум
+                                        +e.P.price 13500 руб. за м<sup>2</sup>
+                    +b.calculate-form
+                        +b.H3.title Расчитайте стоимость и срок работы
+                        +e.FORM.form
+                            +e.col
+                                +b.field
+                                    label Вид работы
+                                    +b.LABEL.select
+                                        select
+                                            option Дизайн интерьера
+                                            option Ремонт
+                                            option Мебель на заказ
+                                            option Умный дом
+                                            option Строительство домов
+                            +e.col
+                                +b.field
+                                    label Как к вам обращаться
+                                    input(type="text")
+                            +e.col
+                                +b.field
+                                    label Ваш контактный номер
+                                    input(type="text" name="phone" class="js-phone-mask" placeholder="+7 (   ) ")
+                            +e.col
+                                +b.BUTTON.btn(class="--neutral-primary --size-md") Получить расчёт
+            +b.SECTION.construction
+                .container
+                    +b.section-description
+                        +e.row
+                            +e.col
+                                +e.H3.title Строительство домов
+                                +b.service-title-block
+                                    +e.H3.title Строительство домов
+                                    img(src="assets/images/home.jpg", alt="")
+                            +e.col
+                                +b.H4.title Строим дома под ключ в Краснодаре больше трёх лет   
+                                .typography.text-columns
+                                    p Надёжность и долговечность — главные критерии при строительстве домов. Поэтому с нами работают специалисты выского уровня. Мы дорожим своей репутацией и прислушиваемся к вашим пожеланиям. 
+                                    p.hidden-sm Детальная проработка сметы и чертежей дома помогут достичь необходимого результата. Наша команда готова ответить на любые вопросы.
+                    +b.stages
+                        +b.H3.title Этапы воздведения дома
+                        +e.row
+                            +e.col
+                                +b.advantage
+                                    +e.P.count 01
+                                    p Разбивка и вынос осей дома, разработка грунта и заливка фундамента
+                            +e.col
+                                +b.advantage
+                                    +e.P.count 02
+                                    p Возведение<br> стен
+                            +e.col
+                                +b.advantage
+                                    +e.P.count 03
+                                    p Устройство<br> перекрытий
+                            +e.col
+                                +b.advantage
+                                    +e.P.count 04
+                                    p Устройство<br> перекрытий
+                            +e.col
+                                +b.advantage
+                                    +e.P.count 05
+                                    p Внутренние<br> отделочные работы
+                            +e.col
+                                +b.advantage
+                                    +e.P.count 06
+                                    p Благоустройство территории
+                    +b.construction-tilt
+                        +e.row
+                            +e.col-large
+                                +b.construction-tilt-item
+                                    img(src="assets/images/tilt/1.jpg", alt="")
+                                    img(src="assets/images/tilt/1-sm.jpg", alt="")
+                                    +e.content
+                                        +e.P.title «МАГИСТР»
+                                        +e.col
+                                            p S = 260 м2
+                                            +e.P.price 3 000 000₽ 
+                                    
+                        +e.row
+                            +e.col
+                                +b.construction-tilt-item
+                                    img(src="assets/images/tilt/2.jpg", alt="")
+                                    img(src="assets/images/tilt/2-sm.jpg", alt="")
+                                    +e.content
+                                        +e.P.title «СЕНЬОР»
+                                        +e.col
+                                            p S = 260 м2
+                                            +e.P.price 3 000 000₽ 
+                                    
+                            +e.col
+                                +b.construction-tilt-item
+                                    img(src="assets/images/tilt/3.jpg", alt="")
+                                    img(src="assets/images/tilt/3-sm.jpg", alt="")
+                                    +e.content
+                                        +e.P.title «ВЕЛЬМОЖА»
+                                        +e.col
+                                            p S = 260 м2
+                                            +e.P.price 3 000 000₽ 
+        +b.SECTION.icons
+            .container
+                +b.H3.title Мы экономим ваш бюджет и время
+                +e.row
+                    +e.col
+                        +b.icon-item
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-1')
+                            +e.P.title Не нужно искать подрядчиков
+                            +e.desc
+                                p Мы реализуем ваш проект от макета до готового дома
+                    +e.col
+                        +b.icon-item
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-2')
+                            +e.P.title Соблюдение сроков прописаных в договоре
+                            +e.desc
+                                p Сроки работ оговариваются и вносятся в договор
+                    +e.col
+                        +b.icon-item
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-3')
+                            +e.P.title Выгодные цена на стройматериалы
+                            +e.desc
+                                p Мы закупаем материалы по оптовой цене
+                    +e.col
+                        +b.icon-item
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-4')
+                            +e.P.title Свой штат<br> сотрудников
+                            +e.desc
+                                p Все вопросы связанные с реализацией решаем мы
+        include ../includes/modules/answer
         include ../includes/modules/footer
 
 block script
