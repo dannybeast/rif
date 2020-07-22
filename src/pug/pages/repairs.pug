@@ -21,6 +21,290 @@ block content
                     +e.H2.title 
                         span Ремонт бывает с таким завершением
             img(src="assets/images/intro/repairs.jpg", alt="")
+        +b.SECTION.page-preview
+            .container
+                +e.H3.title Перед осуществлением ремонта, наши специалисты бесплатно приедут на объект для того, чтобы оценить:
+                +e.row
+                    +b.repairs-item
+                        p Техническое<br> состояние
+                    +b.repairs-item
+                        p Возраст и состояние внутренних конструкций
+                    +b.repairs-item
+                        p Соответствие интерьера модным трендам
+                    +b.repairs-item
+                        p Изношенность инженерных сетей
+        +b.SECTION.packages
+            .container
+                +e.row.js-tabs
+                    +e.aside
+                        +e.H3.title Выбор пакета ремонта
+                        +e.UL
+                            +e.LI(class=" js-tab-link")
+                                +e.A Базовый
+                            +e.LI(class=" js-tab-link")
+                                +e.A Комфорт
+                            +e.LI(class=" js-tab-link")
+                                +e.A Премиум
+                    +e.content
+                        // Базовый
+                        div.js-tab-content
+                            +b.package
+                                +e.UL.gallery
+                                    .swiper-container.swiper-no-swiping
+                                        .swiper-wrapper
+                                            .swiper-slide
+                                                a(href="assets/images/packages/1.jpg" data-fancybox="package-1")
+                                                    img(src="assets/images/packages/1.jpg", alt="")
+                                        
+                                            .swiper-slide
+                                                a(href="assets/images/packages/2.jpg" data-fancybox="package-1")
+                                                    img(src="assets/images/packages/2.jpg", alt="")
+                                       
+                                            .swiper-slide
+                                                a(href="assets/images/packages/3.jpg" data-fancybox="package-1")
+                                                    img(src="assets/images/packages/3.jpg", alt="")
+                                +e.P.subtitle 1к. квартира 40 м<sup>2</sup>
+                                +e.P.price 9000₽ за м<sup>2</sup> / 360 000₽ работа и материалы
+                                +e.H5.title Перечень основных работ: 
+                                +e.UL.list
+                                    +e.LI Укладка керамического гранита в ванной комнате
+                                    +e.LI Керамическая плитка на стенах в ванной комнате
+                                    +e.LI Установка унитаза-компакт
+                                    +e.LI Закладка скрытой трассы для сплит-системы
+                                    +e.LI Укладка ламината в комнатах 
+                                    +e.LI Обои в комнате, прихожей
+                                    +e.LI Натяжной потолок
+                                    +e.LI Монтаж потайных ниш для штор
+                                    +e.LI Установка точечных светильников
+                                    +e.LI Установка розеток и выключателей (до 20 шт)
+                                    +e.LI Устройство конструктивных элементов из ГКЛ в ванной комнате
+                                    +e.LI Установка двух межкомнатных дверей 
+                                +e.H5.title Перечень основных материалов:
+                                +e.UL.list
+                                    +e.LI Обои флизелиновые
+                                    +e.LI Двери белые ПВХ 
+                                    +e.LI Точечные светильники (до 20шт)
+                                    +e.LI Розетки и выключатели (до 20шт)
+                                    +e.LI Ламинат
+                                    +e.LI Плитка керамическая, керамогранит
+                                    +e.LI Плинтус напольный
+                                    +e.LI Ванная акриловая
+                                    +e.LI Классический напольный унитаз
+                                    +e.LI Раковина в ванной комнате
+                                    +e.LI Смеситель
+                                    +e.LI Полотенцесушитель электрический
+                                    +e.LI Смеситель для ванны с душем
+                                +e.H5.title Мебель по проекту (дополнительно): 
+                                +e.UL.list
+                                    +e.LI Кухонный гарнитур – 77000₽
+                                    +e.LI Шкаф-купе – 27650₽                                                            
+                        // Комфорт
+                        div.js-tab-content
+                            +b.package
+                                +e.UL.gallery
+                                    .swiper-container
+                                        .swiper-wrapper
+                                            .swiper-slide
+                                                a(href="assets/images/packages/4.jpg" data-fancybox="package-2")
+                                                    img(src="assets/images/packages/4.jpg", alt="")
+                                        
+                                            .swiper-slide
+                                                a(href="assets/images/packages/5.jpg" data-fancybox="package-2")
+                                                    img(src="assets/images/packages/5.jpg", alt="")
+                                       
+                                            .swiper-slide
+                                                a(href="assets/images/packages/6.jpg" data-fancybox="package-2")
+                                                    img(src="assets/images/packages/6.jpg", alt="")
+                                +e.P.subtitle 1к. квартира 40 м<sup>2</sup>
+                                +e.P.price 11000₽ за м<sup>2</sup> / 440 000₽ работа и материалы
+                                +e.H5.title Перечень основных работ: 
+                                +e.UL.list
+                                    +e.LI Монтаж тёплого пола в с/у и на балконе
+                                    +e.LI Перенос эл.щитка
+                                    +e.LI Укладка керамического гранита в с/у и на балконе
+                                    +e.LI Обои под покраску
+                                    +e.LI Штукатурка, покраска стен на балконе
+                                    +e.LI Натяжные потолки во всех помещениях
+                                    +e.LI Установка инсталляции и подвесного унитаза
+                                    +e.LI Установка подвесной тумбы в ванной комнате
+                                    +e.LI Установка розеток и выключателей (до 25шт)
+                                    +e.LI Устройство конструктивных элементов из ГКЛ
+                                    +e.LI Монтаж LED подсветки
+                                    +e.LI Монтаж скрытой системы вентиляции 
+                                +e.H5.title Перечень основных материалов:
+                                +e.UL.list
+                                    +e.LI Теплые полы
+                                    +e.LI Обои под покраску 
+                                    +e.LI Точечные светильники (до 25 шт)
+                                    +e.LI Розетки и выключатели (до 25шт)
+                                    +e.LI Душевая система с тропическим душем 
+                                    +e.LI Унитаз подвесной 
+                                    +e.LI Инсталляция для унитаза Grohe
+                                    +e.LI Накладная раковина
+                                    +e.LI Подвесная тумба в ванной комнате
+
+                                +e.H5.title Мебель по проекту (дополнительно): 
+                                +e.UL.list
+                                    +e.LI Кухонный гарнитур – 93500₽
+                                    +e.LI Детская корпусная мебель – 54000₽ 
+                                    +e.LI Спальный гарнитур - 40250₽ 
+                        // Премиум        
+                        div.js-tab-content
+                            +b.package
+                                +e.UL.gallery
+                                    .swiper-container
+                                        .swiper-wrapper
+                                            .swiper-slide
+                                                a(href="assets/images/packages/7.jpg" data-fancybox="package-3")
+                                                    img(src="assets/images/packages/7.jpg", alt="")
+                                        
+                                            .swiper-slide
+                                                a(href="assets/images/packages/8.jpg" data-fancybox="package-3")
+                                                    img(src="assets/images/packages/8.jpg", alt="")
+                                       
+                                            .swiper-slide
+                                                a(href="assets/images/packages/9.jpg" data-fancybox="package-3")
+                                                    img(src="assets/images/packages/9.jpg", alt="")
+                                +e.P.subtitle 1к. квартира 40 м<sup>2</sup>
+                                +e.P.price 13500₽ за м<sup>2</sup> / 540 000₽ работа и материалы
+                                +e.H5.title Перечень основных работ: 
+                                +e.UL.list
+                                    +e.LI Укладка керамического гранита или кварц-винила в комнатах 
+                                    +e.LI Монтаж тёплого пола в с/у и на балконе 
+                                    +e.LI Покраска стен, по RAL
+                                    +e.LI Демонтаж балконного блока
+                                    +e.LI Утепление и покраска стен на балконе
+                                    +e.LI Перенос радиатора отопления
+                                    +e.LI Потолок из гипсокартона в помещениях
+                                    +e.LI Натяжной потолок в ванной комнате
+                                    +e.LI Установка гигиенического душа
+                                    +e.LI Установка мебели для ванной комнаты 
+                                    +e.LI Установка трёх межкомнатных дверей 
+                                    +e.LI Установка розеток и выключателей (до 30шт)
+                                    +e.LI Устройство конструктивных элементов из ГКЛ
+                                    +e.LI Установка деревянных декоративных реек 
+                                    +e.LI Установка керамического кухонного фартука 
+                                    +e.LI Замена входной двери
+                                    +e.LI Закладка двух скрытых трасс для сплит-системы
+
+                                +e.H5.title Перечень основных материалов:
+                                +e.UL.list
+                                    +e.LI Настенное покрытие. Краска, по RAL
+                                    +e.LI Декоративная штукатурка 
+                                    +e.LI Межкомнатные двери
+                                    +e.LI Точечные светильники (до 30 шт)
+                                    +e.LI Розетки и выключатели (до 30шт)
+                                    +e.LI Плинтус напольный МДФ
+                                    +e.LI Деревянные декоративные рейки
+                                    +e.LI Деревянные декоративные панели
+                                    +e.LI Ванная акриловая, либо стальная
+                                    +e.LI Гигиенический душ Grohe
+                                    +e.LI Проходной переключатель света в спальне 
+
+                                +e.H5.title Мебель по проекту (дополнительно): 
+                                +e.UL.list
+                                    +e.LI Кухонный гарнитур – 105500₽
+                                    +e.LI Спальный гарнитур - 56500₽   
+
+
+        +b.SECTION.calculate-form(class="--construction")
+            .container
+                form.js-calc-repairs-form
+                    +e.top
+                        +b.H3.title Расчитайте стоимость и срок ремонта
+                        +b.radio-group
+                            label
+                                input(type="radio" name="type" value="Квартиры" checked)
+                                span Квартиры
+                            label
+                                input(type="radio" name="type" value="Дома / Коттеджи")
+                                span Дома / Коттеджи
+                            label
+                                input(type="radio" name="type" value="Коммерция")
+                                span Коммерция
+
+                    +e.form
+                        +e.col
+                            +b.field
+                                label Выберите пакет
+                                +b.LABEL.select
+                                    select(name="package")
+                                        option Базовый
+                                        option Комфорт
+                                        option Премиум 
+                        +e.col
+                            +b.field
+                                label Площадь помещения (по полу)
+                                input(type="number" name="square" placeholder='100')
+                        +e.col
+                            +b.field
+                                label Как к вам обращаться
+                                input(type="text" name="name" placeholder="Андрей")
+                        +e.col
+                            +b.field
+                                label Ваш контактный номер
+                                input(type="text" name="phone" class="js-phone-mask" placeholder="+7 (   ) ")
+                        +e.col
+                            +b.BUTTON.btn(class="--neutral-primary --size-md") Получить расчёт
+        +b.SECTION.projects-slider
+            .container
+                +e.H3.title Выполненые проекты
+                .swiper-prev
+                    svg.svg-icon
+                        use(href='assets/icons/sprite.svg#icon-arrow-thin')
+                .swiper-next
+                    svg.svg-icon
+                        use(href='assets/icons/sprite.svg#icon-arrow-thin')
+                .swiper-container
+                    
+                    .swiper-wrapper
+                        .swiper-slide
+                            +b.projects-slide
+                                img(src="assets/images/projects-slider/1.jpg", alt="")
+                                +e.content(data-swiper-parallax="-100" data-swiper-parallax-duration="600")
+                                    p Евроремонт квартиры 80 м2
+                        .swiper-slide
+                            +b.projects-slide
+                                img(src="assets/images/projects-slider/1.jpg", alt="")
+                                +e.content(data-swiper-parallax="-100" data-swiper-parallax-duration="600")
+                                    p Евроремонт квартиры 80 м2
+
+        +b.SECTION.icons(class="--gray")
+            .container
+                +b.H3.title Почему вы можете доверить нам ремонт вашего помещения
+                +e.row
+                    +e.col
+                        +b.icon-item
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-12')
+                            +e.P.title Надёжность
+                            +e.desc
+                                p Мы работает по договору работ, вместе с актом приёма
+                    +e.col
+                        +b.icon-item
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-13')
+                            +e.P.title Ценообразование
+                            +e.desc
+                                p Мы обсуждаем бюджет до начала работ
+                    +e.col
+                        +b.icon-item
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-14')
+                            +e.P.title Сдача в срок
+                            +e.desc
+                                p Ремонт будет готов точно в срок, прописанный в договоре
+                    +e.col
+                        +b.icon-item
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-8')
+                            +e.P.title Качество работ
+                            +e.desc
+                                p Вы будете довольны результатом
         include ../includes/modules/answer
         include ../includes/modules/footer
 

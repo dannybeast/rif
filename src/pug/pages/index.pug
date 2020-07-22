@@ -19,46 +19,46 @@ block content
                         +b.main-slide
                             +e.overlay
                                 .container
-                                    +e.content
+                                    +e.content(data-swiper-parallax="-100" data-swiper-parallax-duration="600" data-swiper-parallax-opacity="0.5")
                                         +e.H2.title(class="--large") Создаём ваши мечты под ключ
                                         +e.desc
                                             p Ремонт помещений, создание дизайн-проекта или постройка дома под ключ. Нам это под силу
                                         +e.bottom
                                             +b.A( class="btn --neutral-primary js-scrollTo-answer") Бесплатная консультация
-                            img(src="assets/images/main-slider/1.jpg", alt="")
+                            img(src="assets/images/main-slider/1.jpg", alt=""  )
                     .swiper-slide
                         +b.main-slide
                             +e.overlay
                                 .container
-                                    +e.content
+                                    +e.content(data-swiper-parallax="-100" data-swiper-parallax-duration="600" data-swiper-parallax-opacity="0.5")
                                         +e.H2.title Ремонт бывает<br> с таким завершением
                                         +e.desc
                                             p Сделаем для вас ремонт в срок и качественно. Вам не очем беспокоится, семье понравится.
                                         +e.bottom
                                             +b.A(class="btn --neutral-primary js-scrollTo-answer") Бесплатная консультация
-                            img(src="assets/images/main-slider/2.jpg", alt="")
+                            img(src="assets/images/main-slider/2.jpg", alt=""  )
                     .swiper-slide
                         +b.main-slide
                             +e.overlay
                                 .container
-                                    +e.content
+                                    +e.content(data-swiper-parallax="-100" data-swiper-parallax-duration="600" data-swiper-parallax-opacity="0.5")
                                         +e.H2.title Уют начинается<br> с интерьера в доме
                                         +e.desc
                                             p Разработаем для вас дизайн помещения с учетом пожеланий. Нам под силу реализовать ваши мечты
                                         +e.bottom
                                             +b.A(class="btn --neutral-primary js-scrollTo-answer") Бесплатная консультация
-                            img(src="assets/images/main-slider/3.jpg", alt="")
+                            img(src="assets/images/main-slider/3.jpg", alt=""  )
                     .swiper-slide
                         +b.main-slide
                             +e.overlay
                                 .container
-                                    +e.content
+                                    +e.content(data-swiper-parallax="-100" data-swiper-parallax-duration="600" data-swiper-parallax-opacity="0.5")
                                         +e.H2.title Ваш дом —<br> Ваша крепость
                                         +e.desc
                                             p Строительство современных домов
                                         +e.bottom
                                             +b.A(href="#" class="btn --neutral-primary") Бесплатная консультация
-                            img(src="assets/images/main-slider/4.jpg", alt="")
+                            img(src="assets/images/main-slider/4.jpg", alt="" )
                 +e.nav
                     .container
                         +b.slider-nav-module
@@ -71,9 +71,9 @@ block content
                             +b.slider-counter
                                 p
                                     big
-                                        span 04 
+                                        span 01 
                                         | / 
-                                    | 04
+                                    | 01
                         .slider-dots
         +b.SECTION.advantages
             .container
@@ -122,6 +122,75 @@ block content
                             +e.col
                                 .typography
                                     p Вам хочется создать дом с подходящей обстановкой. Вместе с нами это будет просто. Обратитесь за консультацией и наш дизайнер спроектирует дизайн вашей мечты.
+            
+            +b.SECTION.design-cards
+                .container
+                    // visible mobile
+                    +e.slider
+                        .swiper-container
+                            .swiper-wrapper
+                                .swiper-slide
+                                    +b.design-card-mobile
+                                        +e.image
+                                            img(src="assets/images/design-cards/1-sm.jpg", alt="")
+                                        +e.P.title Дизайн помещения квартиры
+                                        +e.desc.typography
+                                            p Утонченные решения в сочетании с мебелью, превратили квартиру в центре Краснодара в место уюта и гармонии. Цветовая схема выстроенна под индивидуальный запрос клиента. 
+                                .swiper-slide
+                                    +b.design-card-mobile
+                                        +e.image
+                                            img(src="assets/images/design-cards/2-sm.jpg", alt="")
+                                        +e.P.title Дизайн помещения частного дома
+                                        +e.desc.typography
+                                            p Утонченные решения в сочетании с мебелью, превратили квартиру в центре Краснодара в место уюта и гармонии. Цветовая схема выстроенна под индивидуальный запрос клиента. 
+                                .swiper-slide
+                                    +b.design-card-mobile
+                                        +e.image
+                                            img(src="assets/images/design-cards/3-sm.jpg", alt="")
+                                        +e.P.title Дизайн помещения коттеджа
+                                        +e.desc.typography
+                                            p Утонченные решения в сочетании с мебелью, превратили квартиру в центре Краснодара в место уюта и гармонии. Цветовая схема выстроенна под индивидуальный запрос клиента. 
+                                .swiper-slide
+                                    +b.design-card-mobile
+                                        +e.image
+                                            img(src="assets/images/design-cards/4-sm.jpg", alt="")
+                                        +e.P.title Дизайн коммерческого помещения 
+                                        +e.desc.typography
+                                            p Утонченные решения в сочетании с мебелью, превратили квартиру в центре Краснодара в место уюта и гармонии. Цветовая схема выстроенна под индивидуальный запрос клиента. 
+                    // visible desktop
+                    +e.row
+                        +e.col(class="--large")
+                            +b.design-card(style="background-image:url('/assets/images/design-cards/1.jpg')")
+                                +e.H4.title Дизайн помещения квартиры
+                                +e.content
+                                    +b.item-element.typography
+                                        p Утонченные решения в сочетании с мебелью, превратили квартиру в центре Краснодара в место уюта и гармонии. Цветовая схема выстроенна под индивидуальный запрос клиента. 
+                                    +b.item-element.typography
+                                        p Панорманые окна помогают дополнить атмосферу роскоши и неповторимости. Все материалы подбирались в процессе разработки дизайна. Что позволило воплотить задуманное по выгодным ценам.
+                        +e.col
+                            +b.design-card(style="background-image:url('/assets/images/design-cards/2.jpg')")
+                                +e.H4.title Дизайн помещения частного дома
+                                +e.content
+                                    +b.item-element.typography
+                                        p Утонченные решения в сочетании с мебелью, превратили квартиру в центре Краснодара в место уюта и гармонии. Цветовая схема выстроенна под индивидуальный запрос клиента. 
+                                        p Панорманые окна помогают дополнить атмосферу роскоши и неповторимости. Все материалы подбирались в процессе разработки дизайна. Что позволило воплотить задуманное по выгодным ценам.
+                        +e.col
+                            +b.design-card(style="background-image:url('/assets/images/design-cards/3.jpg')")
+                                +e.H4.title Дизайн помещения коттеджа
+                                +e.content
+                                    +b.item-element.typography
+                                        p Утонченные решения в сочетании с мебелью, превратили квартиру в центре Краснодара в место уюта и гармонии. Цветовая схема выстроенна под индивидуальный запрос клиента. 
+                                        p Панорманые окна помогают дополнить атмосферу роскоши и неповторимости. Все материалы подбирались в процессе разработки дизайна. Что позволило воплотить задуманное по выгодным ценам.
+                        +e.col(class="--large")
+                            +b.design-card(style="background-image:url('/assets/images/design-cards/4.jpg')")
+                                +e.H4.title Дизайн коммерческого помещения
+                                +e.content
+                                    +b.item-element.typography
+                                        p Внешний вид вашего офиса, магазина, шоу-рума это везитная карточка для клиента. Необходимо расположить клиента к вашей компании. Это можно сделать с помощью правильного дизайна помещений.
+
+                                    +b.item-element.typography
+                                        p Мы разработаем индивидуальный дизайн-проект под ваше помещение. Наши специалисты учтут все ваши комментарии и пожелания. Каждый проект для нас индивидуален. 
+                                                       
             +b.SECTION.repairs
                 .container
                     +b.section-description
@@ -166,32 +235,10 @@ block content
                                     +e.bottom
                                         +e.P.title Премиум
                                         +e.P.price 13500 руб. за м<sup>2</sup>
-                    +b.calculate-form
-                        +b.H3.title Расчитайте стоимость и срок работы
-                        +e.FORM.form
-                            +e.col
-                                +b.field
-                                    label Вид работы
-                                    +b.LABEL.select
-                                        select
-                                            option Дизайн интерьера
-                                            option Ремонт
-                                            option Мебель на заказ
-                                            option Умный дом
-                                            option Строительство домов
-                            +e.col
-                                +b.field
-                                    label Как к вам обращаться
-                                    input(type="text")
-                            +e.col
-                                +b.field
-                                    label Ваш контактный номер
-                                    input(type="text" name="phone" class="js-phone-mask" placeholder="+7 (   ) ")
-                            +e.col
-                                +b.BUTTON.btn(class="--neutral-primary --size-md") Получить расчёт
+                    include ../includes/modules/calc
             +b.SECTION.construction
                 .container
-                    +b.section-description
+                    +b.SECTION.section-description
                         +e.row
                             +e.col
                                 +e.H3.title Строительство домов
@@ -203,7 +250,7 @@ block content
                                 .typography.text-columns
                                     p Надёжность и долговечность — главные критерии при строительстве домов. Поэтому с нами работают специалисты выского уровня. Мы дорожим своей репутацией и прислушиваемся к вашим пожеланиям. 
                                     p.hidden-sm Детальная проработка сметы и чертежей дома помогут достичь необходимого результата. Наша команда готова ответить на любые вопросы.
-                    +b.stages
+                    +b.SECTION.stages
                         +b.H3.title Этапы воздведения дома
                         +e.row
                             +e.col
@@ -239,7 +286,7 @@ block content
                                     +e.content
                                         +e.P.title «МАГИСТР»
                                         +e.col
-                                            p S = 260 м2
+                                            p S = 260 м<sup>2</sup>
                                             +e.P.price 3 000 000₽ 
                                     
                         +e.row
@@ -250,7 +297,7 @@ block content
                                     +e.content
                                         +e.P.title «СЕНЬОР»
                                         +e.col
-                                            p S = 260 м2
+                                            p S = 260 м<sup>2</sup>
                                             +e.P.price 3 000 000₽ 
                                     
                             +e.col
@@ -260,7 +307,7 @@ block content
                                     +e.content
                                         +e.P.title «ВЕЛЬМОЖА»
                                         +e.col
-                                            p S = 260 м2
+                                            p S = 260 м<sup>2</sup>
                                             +e.P.price 3 000 000₽ 
         +b.SECTION.icons
             .container

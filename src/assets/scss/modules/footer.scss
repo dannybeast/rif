@@ -10,12 +10,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 31px;
-    height: 31px;
-    @include sm-block() {
-      width: 20px;
-      height: 20px;
-    }
+    width: 30px;
+    height: 30px;
+
     svg {
       fill: $primary-color;
       width: inherit;

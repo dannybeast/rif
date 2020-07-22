@@ -12,7 +12,7 @@
     <div class="loader"><img src="assets/images/spinner.svg" alt=""></div>
     <main class="wrapper" id="app">
       <!-- WEBSITE-->
-      <div class="content page-index">
+      <div class="content">
         <header class="header">
           <div class="container">
             <div class="header__row"><a class="header__logo" href="/"><img src="assets/images/logo/logo.svg" alt="Rif.ug"></a>
@@ -45,6 +45,104 @@
           <div class="container"><a href="/">Главная</a><span class="breadcrumbs__separator"></span><span>Контакты</span>
           </div>
         </section>
+        <section class="contacts">
+          <div class="container">
+            <div class="contacts__row">
+              <div class="contacts__map">
+                <div class="map" data-address="г.Краснодар, Шоссе Нефтяников 22/1"></div>
+              </div>
+              <div class="contacts__content">
+                <div class="contacts__section">
+                  <div class="contacts__icon">
+                    <svg class="svg-icon">
+                      <use href="assets/icons/sprite.svg#icon-marker"></use>
+                    </svg>
+                  </div>
+                  <div class="contacts__text">
+                    <p> <strong>г.Краснодар,<br> Шоссе Нефтяников 22/1</strong></p>
+                  </div>
+                </div>
+                <div class="contacts__section">
+                  <div class="contacts__icon">
+                    <svg class="svg-icon">
+                      <use href="assets/icons/sprite.svg#icon-phone"></use>
+                    </svg>
+                  </div>
+                  <div class="contacts__text">
+                    <p> <strong><a href="tel:+79282373555">+7 (928) 237-35-55 <span>(Отдел продаж)</span></a></strong></p>
+                    <p> <strong><a href="tel:+79298400014">+7 (929) 840-00-14 <span>(Сотрудничество)</span></a></strong></p>
+                  </div>
+                </div>
+                <div class="contacts__section">
+                  <div class="contacts__icon">
+                    <svg class="svg-icon">
+                      <use href="assets/icons/sprite.svg#icon-time"></use>
+                    </svg>
+                  </div>
+                  <div class="contacts__text">
+                    <p>График работы:</p>
+                    <p> <strong>с 9:00 до 19:00</strong></p>
+                  </div>
+                </div>
+                <div class="contacts__section">
+                  <div class="contacts__icon">
+                    <svg class="svg-icon">
+                      <use href="assets/icons/sprite.svg#icon-mail"></use>
+                    </svg>
+                  </div>
+                  <div class="contacts__text">
+                    <p>Почта:</p>
+                    <p> <strong><a href="mailto:info@rif.ug">info@rif.ug</a></strong></p>
+                  </div>
+                </div>
+                <div class="contacts__section">
+                  <div class="contacts__text">
+                    <p>Мы в соц сетях:</p>
+                    <ul class="social">
+                      <li><a href="https://vk.com/" target="_blank">
+                        <svg class="svg-icon">
+                          <use href="assets/icons/sprite.svg#icon-vk"></use>
+                        </svg></a>
+                      </li>
+                      <li><a href="https://www.instagram.com/" target="_blank">
+                        <svg class="svg-icon">
+                          <use href="assets/icons/sprite.svg#icon-instagram"></use>
+                        </svg></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="answers-small">
+          <div class="container">
+            <div class="answers-small__block">
+              <div class="answers-small__row">
+                <div class="answers-small__content">
+                  <h3 class="answers-small__title">Возникли вопросы?
+                  </h3>
+                  <div class="answers-small__desc">
+                    <p>Закажите обратный звонок и мы перезвоним вам в рабочее время</p>
+                  </div>
+                </div>
+                <form class="answers-small__form js-answer-form">
+                  <div class="field">
+                    <label>Как к вам обращаться</label>
+                    <input type="text" name="name">
+                  </div>
+                  <div class="field">
+                    <label>Ваш контактный номер</label>
+                    <input class="js-phone-mask" type="text" name="phone" placeholder="+7 (   ) ">
+                  </div>
+                  <button class="btn btn--neutral-primary">Получить консультацию
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
         <footer class="footer">
           <div class="container"><a class="footer__logo" href="/"><img src="assets/images/logo/logo.svg" alt="Rif.ug"></a>
             <div class="footer__row">
@@ -65,12 +163,12 @@
                   <div class="contacts-block__section">
                     <p>Мы в соц сетях:</p>
                     <ul class="social">
-                      <li><a href="#" target="_blank">
+                      <li><a href="https://vk.com/" target="_blank">
                         <svg class="svg-icon">
                           <use href="assets/icons/sprite.svg#icon-vk"></use>
                         </svg></a>
                       </li>
-                      <li><a href="#" target="_blank">
+                      <li><a href="https://www.instagram.com/" target="_blank">
                         <svg class="svg-icon">
                           <use href="assets/icons/sprite.svg#icon-instagram"></use>
                         </svg></a>
@@ -126,10 +224,10 @@
               <use href="assets/icons/sprite.svg#icon-cross"></use>
             </svg>
           </div>
-          <form class="callme-form">
+          <form class="callme-form js-callme-form">
             <h3 class="callme-form__title">Введите свой номер телефона и получите БЕСПЛАТНЫЙ расчет
             </h3>
-            <div class="callme-form__field">
+            <div class="callme-form__field field">
               <input class="js-phone-mask" type="text" name="phone" placeholder="+7 (   ) ">
               <button class="btn btn--neutral-primary">Получить бесплатный расчет
               </button>

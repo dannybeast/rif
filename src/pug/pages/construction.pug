@@ -8,7 +8,7 @@ block variables
 
 block content
     // WEBSITE
-    +b.content
+    +b.content.page-construction
         include ../includes/modules/header
         +b.SECTION.breadcrumbs
             .container
@@ -61,6 +61,189 @@ block content
                         +b.advantage
                             +e.P.count 06
                             p Заборы и<br> ограждения
+        
+        +b.SECTION.construction-tilt
+            .container.js-tabs
+                +b.top-tabs
+                    +e.H3.title Примеры наших проектов 
+                    +e.UL.nav
+                        +e.LI(class=" js-tab-link")
+                            +e.A() Премиум
+                        +e.LI(class=" js-tab-link")
+                            +e.A() Эконом
+                        +e.LI(class=" js-tab-link")
+                            +e.A() Популярные
+                div
+                    // Премиум
+                    .js-tab-content
+                        +e.row
+                            +e.col-large
+                                +b.construction-tilt-item
+                                    img(src="assets/images/tilt/1.jpg", alt="")
+                                    img(src="assets/images/tilt/1-sm.jpg", alt="")
+                                    +e.content
+                                        +e.P.title «МАГИСТР»
+                                        +e.col
+                                            p S = 260 м<sup>2</sup>
+                                            +e.P.price 3 000 000₽ 
+                                    
+                        +e.row
+                            +e.col
+                                +b.construction-tilt-item
+                                    img(src="assets/images/tilt/2.jpg", alt="")
+                                    img(src="assets/images/tilt/2-sm.jpg", alt="")
+                                    +e.content
+                                        +e.P.title «СЕНЬОР»
+                                        +e.col
+                                            p S = 260 м<sup>2</sup>
+                                            +e.P.price 3 000 000₽ 
+                                    
+                            +e.col
+                                +b.construction-tilt-item
+                                    img(src="assets/images/tilt/3.jpg", alt="")
+                                    img(src="assets/images/tilt/3-sm.jpg", alt="")
+                                    +e.content
+                                        +e.P.title «ВЕЛЬМОЖА»
+                                        +e.col
+                                            p S = 260 м<sup>2</sup>
+                                            +e.P.price 3 000 000₽ 
+                    // Эконом
+                    .js-tab-content
+                        +e.row
+                            +e.col-large
+                                +b.construction-tilt-item
+                                    img(src="assets/images/tilt/1.jpg", alt="")
+                                    img(src="assets/images/tilt/1-sm.jpg", alt="")
+                                    +e.content
+                                        +e.P.title «Эконом»
+                                        +e.col
+                                            p S = 260 м<sup>2</sup>
+                                            +e.P.price 3 000 000₽ 
+                                    
+                        +e.row
+                            +e.col
+                                +b.construction-tilt-item
+                                    img(src="assets/images/tilt/2.jpg", alt="")
+                                    img(src="assets/images/tilt/2-sm.jpg", alt="")
+                                    +e.content
+                                        +e.P.title «СЕНЬОР»
+                                        +e.col
+                                            p S = 260 м<sup>2</sup>
+                                            +e.P.price 3 000 000₽ 
+                                    
+                            +e.col
+                                +b.construction-tilt-item
+                                    img(src="assets/images/tilt/3.jpg", alt="")
+                                    img(src="assets/images/tilt/3-sm.jpg", alt="")
+                                    +e.content
+                                        +e.P.title «ВЕЛЬМОЖА»
+                                        +e.col
+                                            p S = 260 м<sup>2</sup>
+                                            +e.P.price 3 000 000₽ 
+                    // Популярные
+                    .js-tab-content
+                        +e.row
+                            +e.col-large
+                                +b.construction-tilt-item
+                                    img(src="assets/images/tilt/1.jpg", alt="")
+                                    img(src="assets/images/tilt/1-sm.jpg", alt="")
+                                    +e.content
+                                        +e.P.title «Популярные»
+                                        +e.col
+                                            p S = 260 м<sup>2</sup>
+                                            +e.P.price 3 000 000₽ 
+                                    
+                        +e.row
+                            +e.col
+                                +b.construction-tilt-item
+                                    img(src="assets/images/tilt/2.jpg", alt="")
+                                    img(src="assets/images/tilt/2-sm.jpg", alt="")
+                                    +e.content
+                                        +e.P.title «СЕНЬОР»
+                                        +e.col
+                                            p S = 260 м<sup>2</sup>
+                                            +e.P.price 3 000 000₽ 
+                                    
+                            +e.col
+                                +b.construction-tilt-item
+                                    img(src="assets/images/tilt/3.jpg", alt="")
+                                    img(src="assets/images/tilt/3-sm.jpg", alt="")
+                                    +e.content
+                                        +e.P.title «ВЕЛЬМОЖА»
+                                        +e.col
+                                            p S = 260 м<sup>2</sup>
+                                            +e.P.price 3 000 000₽ 
+        +b.SECTION.calculate-form(class="--construction")
+            .container
+                +b.H3.title Расчитайте стоимость, материал дома и срок работы
+                +e.FORM.form.js-calc-construction-form
+                    +e.col
+                        +b.field
+                            label Этажность
+                            +b.radio-group
+                                label
+                                    input(type="radio" name="floor" value="1" checked)
+                                    span 1
+                                label
+                                    input(type="radio" name="floor" value="2")
+                                    span 2
+                                label
+                                    input(type="radio" name="floor" value="3")
+                                    span 3
+                                label
+                                    input(type="radio" name="floor" value="4 и более")
+                                    span 4 и более
+                    +e.col
+                        +b.field
+                            label Жилая площадь, м<sup>2</sup>
+                            input(type="number" placeholder='100' name="square")
+                    +e.col
+                        +b.field
+                            label Как к вам обращаться
+                            input(type="text" name="name" placeholder="Андрей")
+                    +e.col
+                        +b.field
+                            label Ваш контактный номер
+                            input(type="text" name="phone" class="js-phone-mask" placeholder="+7 (   ) ")
+                    +e.col
+                        +b.BUTTON.btn(class="--neutral-primary --size-md") Получить расчёт
+
+        +b.SECTION.icons(class="--gray")
+            .container
+                +b.H3.title Строим на совесть, внимательны к деталям
+                +e.row
+                    +e.col
+                        +b.icon-item
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-9')
+                            +e.P.title Профессионализм
+                            +e.desc
+                                p В нашей команде строителей мастера с более чем 10 летним опытом
+                    +e.col
+                        +b.icon-item
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-10')
+                            +e.P.title Качественные материалы
+                            +e.desc
+                                p Мы проверяем качество у каждого поставщика
+                    +e.col
+                        +b.icon-item
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-11')
+                            +e.P.title Выгодные цена на стройматериалы
+                            +e.desc
+                                p За счёт крупных партий, мы предлагаем цены ниже рыночных
+                    +e.col
+                        +b.icon-item
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-8')
+                            +e.P.title Качество работ
+                            +e.desc
+                                p Вы будете довольны результатом
         include ../includes/modules/answer
         include ../includes/modules/footer
 

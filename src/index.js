@@ -15,24 +15,57 @@ import "./assets/scss/main.scss";
 import hideLoader from "./js/modules/loader";
 import "lazyload";
 import "@fancyapps/fancybox";
-import Accordion from "./js/modules/accordion";
 import mobileNavigation from "./js/modules/mobileNavigation";
 import Modal from "./js/modules/modals";
 import animations from "./js/modules/animations";
 import masks from "./js/modules/inputmasks";
 import sliders from "./js/modules/sliders";
-import Tabs from "./js/modules/tabs";
-import Notice from "./js/modules/notifications";
+import contactsMap from "./js/modules/contactsMap";
 import { scrollTo } from "./js/modules/scrollTo";
+
+// Forms
+import "./js/forms/validation";
+import "./js/forms/callme";
+import "./js/forms/answer";
+import "./js/forms/calc";
+import "./js/forms/calc-construction";
+import "./js/forms/calc-design";
+import "./js/forms/calc-repairs";
+
 document.addEventListener("DOMContentLoaded", function() {
   animations();
-  // Accordion
-  for (const e of document.querySelectorAll('[data-accordion="trigger"]')) {
-    const newAccordion = new Accordion(e);
-    newAccordion;
-  }
+
+  // Tabs
+  let $tabs = $(".js-tabs");
+
+  $tabs.each(function() {
+    let tabs_item = $(this);
+
+    function showTab(index) {
+      tabs_item
+        .find(".js-tab-link")
+        .eq(index)
+        .addClass("is-active");
+      tabs_item
+        .find(".js-tab-content")
+        .eq(index)
+        .show();
+      sliders();
+    }
+    function hideTabs() {
+      tabs_item.find(".js-tab-link.is-active").removeClass("is-active");
+      tabs_item.find(".js-tab-content").hide();
+    }
+    showTab(0);
+    tabs_item.find(".js-tab-link").click(function() {
+      hideTabs();
+      showTab($(this).index());
+    });
+  });
+
   masks();
   sliders();
+  contactsMap();
   new Modal();
 });
 
@@ -42,6 +75,6 @@ window.onload = function() {
     if (document.querySelector(".js-scrollTo-answer")) {
       scrollTo(".js-scrollTo-answer", ".answers__block", "0");
     }
-  }, 1000);
+  }, 500);
   hideLoader();
 };

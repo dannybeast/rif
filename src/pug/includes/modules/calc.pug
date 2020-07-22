@@ -1,0 +1,23 @@
++b.calculate-form
+  +b.H3.title Расчитайте стоимость<br> и срок работы
+  +e.FORM.form.js-calc-form
+    +e.col
+      +b.field
+        label Вид работы
+        +b.LABEL.select
+          select(name="type")
+            option Дизайн интерьера
+            option Ремонт
+            option Мебель на заказ
+            option Умный дом
+            option Строительство домов
+    +e.col
+      +b.field
+        label Как к вам обращаться
+        input(type="text" name="name")
+    +e.col
+      +b.field
+        label Ваш контактный номер
+        input(type="text" name="phone" class="js-phone-mask" placeholder="+7 (   ) ")
+    +e.col
+      +b.BUTTON.btn(class="--neutral-primary --size-md") Получить расчёт

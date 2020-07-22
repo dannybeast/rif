@@ -21,6 +21,213 @@ block content
                     +e.H2.title 
                         span Уют начинается с интерьера в доме
             img(src="assets/images/intro/interior-design.jpg", alt="")
+        +b.SECTION.ideas
+            .container
+                +b.H3.title Мы воплотим<br> ваши идеи в реальность
+                +e.row
+                    +e.col
+                        .typography
+                            p Вам хочется создать дом с подходящей обстановкой. Вместе с нами это будет просто. Обратитесь за консультацией и наш дизайнер спроектирует дизайн вашей мечты.
+                    +e.col
+                        .typography
+                            p Создайте свой уют, который по достоинству оценят члены семьи. Этого можно достичь с помощью баланса цвета и форм. Наши дизайнеры имеют большой опыт.
+                    +e.col
+                        .typography
+                            p Вам хочется создать дом с подходящей обстановкой. Вместе с нами это будет просто. Обратитесь за консультацией и наш дизайнер спроектирует дизайн вашей мечты.
+        +b.SECTION.construction-tilt
+            .container.js-tabs
+                +b.top-tabs
+                    +e.H3.title Примеры наших проектов 
+                    +e.UL.nav
+                        +e.LI(class=" js-tab-link")
+                            +e.A() Квартиры
+                        +e.LI(class=" js-tab-link")
+                            +e.A() Дома / Коттеджи
+                        +e.LI(class=" js-tab-link")
+                            +e.A() Коммерция
+                
+                div
+                    // Квартиры
+                    .js-tab-content
+                        +e.row
+                            +e.col
+                                +b.tilt-item
+                                    img(src="assets/images/tilt/4.jpg", alt="")
+                                    +e.content
+                                        +e.P.title Студия
+                                        +e.desc
+                                            p Краткое описание проекта
+
+                            +e.col
+                                +b.tilt-item
+                                    img(src="assets/images/tilt/5.jpg", alt="")
+                                    +e.content
+                                        +e.P.title 2-комнатная квартира
+                                        +e.desc
+                                            p Краткое описание проекта
+                            +e.col
+                                +b.tilt-item
+                                    img(src="assets/images/tilt/6.jpg", alt="")
+                                    +e.content
+                                        +e.P.title 3-комнатная квартира
+                                        +e.desc
+                                            p Краткое описание проекта
+                            +e.col
+                                +b.tilt-item
+                                    img(src="assets/images/tilt/7.jpg", alt="")
+                                    +e.content
+                                        +e.P.title 4-комнатная квартира
+                                        +e.desc
+                                            p Краткое описание проекта
+                    // Дома / Коттеджи
+                
+                    .js-tab-content
+                        +e.row
+                            +e.col
+                                +b.tilt-item
+                                    img(src="assets/images/tilt/7.jpg", alt="")
+                                    +e.content
+                                        +e.P.title Дом 65м<sup>2</sup>
+                                        +e.desc
+                                            p Краткое описание проекта
+
+                            +e.col
+                                +b.tilt-item
+                                    img(src="assets/images/tilt/6.jpg", alt="")
+                                    +e.content
+                                        +e.P.title Коттедж 132м<sup>2</sup>
+                                        +e.desc
+                                            p Краткое описание проекта
+                            +e.col
+                                +b.tilt-item
+                                    img(src="assets/images/tilt/5.jpg", alt="")
+                                    +e.content
+                                        +e.P.title Коттедж 155м<sup>2</sup>
+                                        +e.desc
+                                            p Краткое описание проекта
+                            +e.col
+                                +b.tilt-item
+                                    img(src="assets/images/tilt/4.jpg", alt="")
+                                    +e.content
+                                        +e.P.title Дом 205м<sup>2</sup>
+                                        +e.desc
+                                            p Краткое описание проекта
+                    // Коммерция
+                
+                    .js-tab-content
+                        +e.row
+                            +e.col
+                                +b.tilt-item
+                                    img(src="assets/images/tilt/6.jpg", alt="")
+                                    +e.content
+                                        +e.P.title Коммерция
+                                        +e.desc
+                                            p Краткое описание проекта
+
+                            +e.col
+                                +b.tilt-item
+                                    img(src="assets/images/tilt/7.jpg", alt="")
+                                    +e.content
+                                        +e.P.title Коммерция
+                                        +e.desc
+                                            p Краткое описание проекта
+                            +e.col
+                                +b.tilt-item
+                                    img(src="assets/images/tilt/4.jpg", alt="")
+                                    +e.content
+                                        +e.P.title Коммерция
+                                        +e.desc
+                                            p Краткое описание проекта
+                            +e.col
+                                +b.tilt-item
+                                    img(src="assets/images/tilt/5.jpg", alt="")
+                                    +e.content
+                                        +e.P.title Коммерция
+                                        +e.desc
+                                            p Краткое описание проекта
+
+        +b.SECTION.calculate-form(class="--construction")
+            .container
+                form.js-calc-design-form
+                    +e.top
+                        +b.H3.title Расчитайте стоимость и срок работы
+                        +b.radio-group
+                            label
+                                input(type="radio" name="rooms" value="Студия" checked)
+                                span Студия
+                            label
+                                input(type="radio" name="rooms" value="1-комнатная")
+                                span 1-комнатная
+                            label
+                                input(type="radio" name="rooms" value="2-комнатная")
+                                span 2-комнатная
+                            label
+                                input(type="radio" name="rooms" value="3-комнатная")
+                                span 3-комнатная
+                            label
+                                input(type="radio" name="rooms" value="4 и более комнат")
+                                span 4 и более комнат
+                    +e.form
+                        +e.col
+                            +b.field
+                                label Тип недвижимости
+                                +b.LABEL.select
+                                    select(name="type")
+                                        option Квартира
+                                        option Дом/Коттедж
+                                        option Коммерция
+                        +e.col
+                            +b.field
+                                label Площадь помещения (по полу)
+                                input(type="number" name="square" placeholder='100')
+                        +e.col
+                            +b.field
+                                label Как к вам обращаться
+                                input(type="text" name="name" placeholder="Андрей")
+                        +e.col
+                            +b.field
+                                label Ваш контактный номер
+                                input(type="text" name="phone" class="js-phone-mask" placeholder="+7 (   ) ")
+                        +e.col
+                            +b.BUTTON.btn(class="--neutral-primary --size-md") Получить расчёт
+
+        +b.SECTION.icons(class="--gray")
+            .container
+                +b.H3.title РИФ.UG — ваш качественный подрядчик
+                +e.row
+                    +e.col
+                        +b.icon-item
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-5')
+                            +e.P.title Дизайн как призвание
+                            +e.desc
+                                p У нас идейные специалисты, которым есть что предложить
+                    +e.col
+                        +b.icon-item
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-6')
+                            +e.P.title Когда всё сочетается
+                            +e.desc
+                                p Мы подберем для вас магазин и мебель
+                    +e.col
+                        +b.icon-item
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-7')
+                            +e.P.title Две версии дизайна
+                            +e.desc
+                                p Выберите рукописный или 3D макет 
+                    +e.col
+                        +b.icon-item
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-8')
+                            +e.P.title Качество работ
+                            +e.desc
+                                p Вы будете довольны результатом
+
         include ../includes/modules/answer
         include ../includes/modules/footer
 

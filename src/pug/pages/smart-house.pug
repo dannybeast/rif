@@ -8,7 +8,7 @@ block variables
 
 block content
     // WEBSITE
-    +b.content.page-index
+    +b.content
         include ../includes/modules/header
         +b.SECTION.breadcrumbs
             .container
@@ -21,6 +21,110 @@ block content
                     +e.H2.title 
                         span Забота о том,<br> что вам дорого
             img(src="assets/images/intro/smart-house.jpg", alt="")
+        +b.SECTION.page-preview
+            .container
+                +e.H3.title умный дом и видеонаблюдение помогут вам держать под контролем обстановку на вашем земельном участке. 
+                +e.row
+                    +b.repairs-item
+                        p Управление<br> со смартфона
+                    +b.repairs-item
+                        p Весь дом в одном<br> приложении
+                    +b.repairs-item
+                        p Он-лайн<br> трансляция с камер
+                    +b.repairs-item
+                        p Хранение видео<br> на облаке
+        
+        +b.SECTION.media-section
+            .container
+                +e.row
+                    +e.media
+                        img(src="assets/images/smart-house/1.jpg", alt="")
+                    +e.content
+                        +e.H3.title Умный дом —
+                        .typography
+                            p это комплексная система автоматизации управления различными устройствами, расположенными в частном доме или квартире.
+        
+        
+        +b.overlay-gray
+
+            +b.SECTION.smart-systems
+                .container
+                    +b.H3.title-large Система умный дом<br> для любых целей
+                    +b.quote(class="--before-line")
+                        .typography
+                            p Ключевые этапы создания системы автомотизации и управления умный дом. 
+                    +b.SECTION.step-section
+                        +e.image
+                            img(src="assets/images/smart-house/system1.jpg", alt="")
+                        +e.content
+                            +e.P.count 01
+                            +e.P.title Проектирование системы
+                            +e.P.desc Мы оговариваем необходимый набор функций
+                    +b.SECTION.step-section
+                        +e.content
+                            +e.P.count 02
+                            +e.P.title Подбор оборудования
+                            +e.P.desc У нас широкий выбор технического оснащения для умного дома
+                        +e.image
+                            img(src="assets/images/smart-house/system2.jpg", alt="")
+                    +b.SECTION.step-section
+                        +e.image
+                            img(src="assets/images/smart-house/system3.jpg", alt="")
+                        +e.content
+                            +e.P.count 03
+                            +e.P.title Электромонтажные работы
+                            +e.P.desc Качественная электрика — залог долговечности системы умный дом
+                    +b.SECTION.step-section
+                        +e.content
+                            +e.P.count 04
+                            +e.P.title Обслуживание
+                            +e.P.desc Обучим пользованию системой, запрограммируем все необходимые функции
+                        +e.image
+                            img(src="assets/images/smart-house/system4.jpg", alt="")
+            +b.SECTION.video-systems
+                .container
+                    +b.H3.title-large Система видеонаблюдения для безопасности вашей семьи
+                    +b.quote(class="--before-line").hidden-sm
+                        .typography
+                            p Профессиональные специалисты подберут систему видеонаблюдения для ваших целей.
+                            p До безопастности вашего имущества и семьи всего три шага
+                    +e.row
+                        +e.col
+                            +b.system-step
+                                +e.image
+                                    img(src="assets/images/smart-house/step1.jpg", alt="")
+                                +e.P.title Шаг 1
+                                +e.desc Составления схемы расположения видеокамер
+                        +e.col
+                            +b.system-step
+                                +e.image
+                                    img(src="assets/images/smart-house/step2.jpg", alt="")
+                                +e.P.title Шаг 2
+                                +e.desc Выбор необходимого оборудования и функций управления
+                        +e.col
+                            +b.system-step
+                                +e.image
+                                    img(src="assets/images/smart-house/step3.jpg", alt="")
+                                +e.P.title Шаг 3
+                                +e.desc Монтаж оборудования, обучение пользованию
+            
+            
+            +b.SECTION.advantages
+                .container
+                    +b.H3.title Почему у нас стоит заказать систему видеонаблюдения
+                    +e.row
+                        +b.advantage
+                            +e.P.count 01
+                            p Гарантия качества на<br> все оборудование
+                        +b.advantage
+                            +e.P.count 02
+                            p Квалифицированные<br> специалисты
+                        +b.advantage
+                            +e.P.count 03
+                            p Опыт больше 5 лет в<br> сфере безопастности
+        .container
+            include ../includes/modules/calc
+
         include ../includes/modules/footer
 
 block script

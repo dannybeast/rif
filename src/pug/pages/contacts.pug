@@ -8,13 +8,84 @@ block variables
 
 block content
     // WEBSITE
-    +b.content.page-index
+    +b.content
         include ../includes/modules/header
         +b.SECTION.breadcrumbs
             .container
                 +e.A(href="/") Главная
                 +e.SPAN.separator
                 span Контакты
+        +b.SECTION.contacts
+            .container
+                +e.row
+                    +e.map
+                        .map(data-address="г.Краснодар, Шоссе Нефтяников 22/1")
+                    +e.content
+                        +e.section
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-marker')
+                            +e.text
+                                p 
+                                    strong г.Краснодар,<br> Шоссе Нефтяников 22/1
+                        +e.section
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-phone')
+                            +e.text
+                                p 
+                                    strong
+                                        a(href="tel:+79282373555") +7 (928) 237-35-55 <span>(Отдел продаж)</span>
+                                p 
+                                    strong
+                                        a(href="tel:+79298400014") +7 (929) 840-00-14 <span>(Сотрудничество)</span>
+                        
+                        +e.section
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-time')
+                            +e.text
+                                p График работы:
+                                p 
+                                    strong с 9:00 до 19:00
+                        +e.section
+                            +e.icon
+                                svg.svg-icon
+                                    use(href='assets/icons/sprite.svg#icon-mail')
+                            +e.text
+                                p Почта:
+                                p 
+                                    strong
+                                        a(href="mailto:info@rif.ug") info@rif.ug
+                        +e.section
+                            +e.text
+                                p Мы в соц сетях:
+                                +b.UL.social
+                                    +e.LI
+                                        +e.A(href="https://vk.com/" target="_blank")
+                                            svg.svg-icon
+                                                use(href='assets/icons/sprite.svg#icon-vk')
+                                    +e.LI
+                                        +e.A(href="https://www.instagram.com/" target="_blank")
+                                            svg.svg-icon
+                                                use(href='assets/icons/sprite.svg#icon-instagram')
+        +b.SECTION.answers-small
+            .container
+                +e.block
+                    +e.row
+                        +e.content
+                            +e.H3.title Возникли вопросы?
+                            +e.desc
+                                p Закажите обратный звонок и мы перезвоним вам в рабочее время
+                        +e.FORM.form.js-answer-form
+                            .field
+                                label Как к вам обращаться
+                                input(type="text" name="name")
+                            .field
+                                label Ваш контактный номер
+                                input(type="text" name="phone" class="js-phone-mask" placeholder="+7 (   ) ")
+                            +b.BUTTON.btn(class="--neutral-primary") Получить консультацию
+
         include ../includes/modules/footer
 
 block script

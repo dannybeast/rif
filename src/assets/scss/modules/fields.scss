@@ -32,10 +32,6 @@ label {
   font-size: 13px;
   font-weight: 700;
   color: $neutral-primary;
-
-  sup {
-    color: $danger-color;
-  }
 }
 
 input[type="radio"] + label,
