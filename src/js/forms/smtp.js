@@ -3,7 +3,7 @@
 export const Data = {
   from: "webkrd@mail.ru",
   to: "webkrd@mail.ru",
-  SecureToken: "9fd20db1-497b-4b8e-91d3-c2a4e19c6190",
+  SecureToken: "f832c81e-ef7c-4d81-adf5-c37102572c14",
 };
 export const Email = {
   send: function(a) {
