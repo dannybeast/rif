@@ -67,6 +67,7 @@
     "jquery-validation": "^1.19.2",
     "lazyload": "^2.0.0-rc.2",
     "sass-em": "^1.0.3",
+    "simple-parallax-js": "^5.5.1",
     "swiper": "^5.3.0",
     "vue": "^2.6.10",
     "webpack-svgstore-plugin": "^4.1.0"

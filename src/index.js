@@ -20,6 +20,7 @@ import Modal from "./js/modules/modals";
 import animations from "./js/modules/animations";
 import masks from "./js/modules/inputmasks";
 import sliders from "./js/modules/sliders";
+import parallax from "./js/modules/parallax";
 import contactsMap from "./js/modules/contactsMap";
 import { scrollTo } from "./js/modules/scrollTo";
 
@@ -64,7 +65,9 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   masks();
+
   sliders();
+  parallax();
   contactsMap();
   new Modal();
 });
