@@ -1,0 +1,612 @@
+.advantages {
+  $parent: &;
+  &[data-emergence="hidden"] {
+    .advantage {
+      opacity: 0;
+      transform: translateX(-20px);
+      @include sm-block() {
+        transform: translateY(-20px);
+      }
+    }
+    .title {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+
+  &[data-emergence="visible"] {
+    .advantage,
+    .title {
+      transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+      opacity: 1;
+      transform: none;
+    }
+    @for $i from 1 through 4 {
+      .advantage:nth-child(#{$i}) {
+        transition-delay: #{$i * 0.1}s;
+      }
+    }
+    .title {
+      transition-delay: 0.5s;
+    }
+  }
+}
+
+.section-description {
+  $parent: &;
+  &[data-emergence="hidden"] {
+    #{$parent}__col {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+
+  &[data-emergence="visible"] {
+    #{$parent}__col {
+      transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+      opacity: 1;
+      transform: none;
+    }
+    @for $i from 1 through 2 {
+      #{$parent}__col:nth-child(#{$i}) {
+        transition-delay: #{$i * 0.1}s;
+      }
+    }
+  }
+}
+
+.design-interior {
+  $parent: &;
+  &[data-emergence="hidden"] {
+    .title {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    #{$parent}__image {
+      opacity: 0;
+    }
+  }
+
+  &[data-emergence="visible"] {
+    .title,
+    #{$parent}__image {
+      transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+      opacity: 1;
+      transform: none;
+    }
+    .title {
+      transition-delay: 0.5s;
+    }
+  }
+}
+
+.media-section {
+  $parent: &;
+  &[data-emergence="hidden"] {
+    #{$parent}__content {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    #{$parent}__media {
+      opacity: 0;
+    }
+  }
+
+  &[data-emergence="visible"] {
+    #{$parent}__content,
+    #{$parent}__media {
+      transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+      opacity: 1;
+      transform: none;
+    }
+    #{$parent}__content {
+      transition-delay: 0.5s;
+    }
+  }
+}
+
+.ideas {
+  $parent: &;
+  &[data-emergence="hidden"] {
+    .title {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    #{$parent}__col {
+      opacity: 0;
+      transform: translateY(-20px);
+      .typography {
+        &:before {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  &[data-emergence="visible"] {
+    #{$parent}__col,
+    #{$parent}__col .typography:before,
+    .title {
+      transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+      opacity: 1;
+      transform: none;
+    }
+    @for $i from 1 through 2 {
+      #{$parent}__col:nth-child(#{$i}) {
+        transition-delay: #{$i * 0.1}s;
+      }
+    }
+    #{$parent}__col .typography:before {
+      transition-delay: 0.4s;
+    }
+    .title {
+      transition-delay: 0.5s;
+    }
+  }
+}
+
+.system-step {
+  $parent: &;
+  &[data-emergence="hidden"] {
+    #{$parent}__image {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    #{$parent}__title,
+    #{$parent}__desc {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+
+  &[data-emergence="visible"] {
+    #{$parent}__image,
+    #{$parent}__title,
+    #{$parent}__desc {
+      transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+      opacity: 1;
+      transform: none;
+    }
+    #{$parent}__title,
+    #{$parent}__desc {
+      transition-delay: 0.2s;
+    }
+  }
+}
+
+.design-card {
+  $parent: &;
+  &[data-emergence="hidden"] {
+    opacity: 0;
+    transform: scale(0.9);
+    .item-element {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    #{$parent}__title {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+
+  &[data-emergence="visible"] {
+    transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+    opacity: 1;
+    transform: none;
+    #{$parent}__title,
+    .item-element {
+      transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+      opacity: 1;
+      transform: none;
+    }
+
+    .item-element {
+      transition-delay: 0.2s;
+    }
+    #{$parent}__title {
+      transition-delay: 0.3s;
+    }
+  }
+}
+.repairs-package {
+  $parent: &;
+  &[data-emergence="hidden"] {
+    #{$parent}__image {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    #{$parent}__bottom {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+
+  &[data-emergence="visible"] {
+    #{$parent}__image,
+    #{$parent}__bottom {
+      transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+      opacity: 1;
+      transform: none;
+    }
+    #{$parent}__bottom {
+      transition-delay: 0.2s;
+    }
+  }
+}
+
+.calculate-form {
+  $parent: &;
+  &[data-emergence="hidden"] {
+    #{$parent}__col,
+    .radio-group {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    .title {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+
+  &[data-emergence="visible"] {
+    #{$parent}__col,
+    .title,
+    .radio-group {
+      transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+      opacity: 1;
+      transform: none;
+    }
+    @for $i from 1 through 6 {
+      #{$parent}__col:nth-child(#{$i}) {
+        transition-delay: #{$i * 0.1}s;
+      }
+    }
+
+    .title {
+      transition-delay: 0.5s;
+    }
+  }
+}
+
+.stages {
+  $parent: &;
+  &[data-emergence="hidden"] {
+    #{$parent}__col {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    .title {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+
+  &[data-emergence="visible"] {
+    #{$parent}__col,
+    .title {
+      transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+      opacity: 1;
+      transform: none;
+    }
+    @for $i from 1 through 6 {
+      #{$parent}__col:nth-child(#{$i}) {
+        transition-delay: #{$i * 0.1}s;
+      }
+    }
+    .title {
+      transition-delay: 0.7s;
+    }
+  }
+}
+
+.answers {
+  $parent: &;
+  &[data-emergence="hidden"] {
+    opacity: 0;
+    transform: scale(0.9);
+    #{$parent}__content {
+      opacity: 0;
+      transform: translateX(20px);
+      @include sm-block() {
+        transform: translateY(-20px);
+      }
+    }
+    #{$parent}__form {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+
+  &[data-emergence="visible"] {
+    transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+    opacity: 1;
+    transform: none;
+    #{$parent}__form,
+    #{$parent}__content {
+      transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+      opacity: 1;
+      transform: none;
+    }
+
+    #{$parent}__form {
+      transition-delay: 0.2s;
+    }
+    #{$parent}__content {
+      transition-delay: 0.3s;
+    }
+  }
+}
+
+.icons {
+  $parent: &;
+  &[data-emergence="hidden"] {
+    #{$parent}__col {
+      opacity: 0;
+      transform: translateX(-20px);
+      @include sm-block() {
+        transform: translateY(-20px);
+      }
+    }
+    .title {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+
+  &[data-emergence="visible"] {
+    #{$parent}__col,
+    .title {
+      transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+      opacity: 1;
+      transform: none;
+    }
+    @for $i from 1 through 4 {
+      #{$parent}__col:nth-child(#{$i}) {
+        transition-delay: #{$i * 0.1}s;
+      }
+    }
+    .title {
+      transition-delay: 0.6s;
+    }
+  }
+}
+.construction-tilt-item {
+  $parent: &;
+  &[data-emergence="hidden"] {
+    opacity: 0;
+    transform: scale(0.9);
+    #{$parent}__content {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+
+  &[data-emergence="visible"] {
+    transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+    opacity: 1;
+    transform: none;
+    #{$parent}__content {
+      transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+      opacity: 1;
+      transform: none;
+    }
+
+    #{$parent}__content {
+      transition-delay: 0.2s;
+    }
+  }
+}
+
+.page-intro {
+  $parent: &;
+
+  &[data-emergence="hidden"] {
+    opacity: 0;
+    #{$parent}__title {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+  }
+
+  &[data-emergence="visible"] {
+    transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+    opacity: 1;
+    transform: none;
+    #{$parent}__title {
+      transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+      opacity: 1;
+      transform: none;
+    }
+
+    #{$parent}__title {
+      transition-delay: 0.5s;
+    }
+  }
+}
+
+.page-preview {
+  $parent: &;
+  &[data-emergence="hidden"] {
+    .repairs-item {
+      opacity: 0;
+      transform: translateX(-20px);
+      @include sm-block() {
+        transform: translateY(-20px);
+      }
+    }
+    #{$parent}__title {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+
+  &[data-emergence="visible"] {
+    .repairs-item,
+    #{$parent}__title {
+      transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+      opacity: 1;
+      transform: none;
+    }
+    @for $i from 1 through 4 {
+      .repairs-item:nth-child(#{$i}) {
+        transition-delay: #{$i * 0.1}s;
+      }
+    }
+    #{$parent}__title {
+      transition-delay: 0.6s;
+    }
+  }
+}
+.main-slider {
+  $parent: &;
+  &[data-emergence="hidden"] {
+    .main-slide {
+      opacity: 0;
+    }
+    .main-slide__overlay {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    .main-slider__nav {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+
+  &[data-emergence="visible"] {
+    .main-slide,
+    .main-slide__overlay,
+    .main-slider__nav {
+      transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+      opacity: 1;
+      transform: none;
+    }
+
+    .main-slide__overlay {
+      transition-delay: 0.3s;
+    }
+    .main-slider__nav {
+      transition-delay: 0.6s;
+    }
+  }
+}
+
+.title-large {
+  $parent: &;
+  &[data-emergence="hidden"] {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  &[data-emergence="visible"] {
+    transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.quote {
+  $parent: &;
+  &[data-emergence="hidden"] {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  &[data-emergence="visible"] {
+    transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.step-section {
+  $parent: &;
+  &[data-emergence="hidden"] {
+    #{$parent}__title,
+    #{$parent}__desc {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    #{$parent}__count {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    #{$parent}__image {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+  }
+
+  &[data-emergence="visible"] {
+    #{$parent}__title,
+    #{$parent}__desc,
+    #{$parent}__image,
+    #{$parent}__count {
+      transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+      opacity: 1;
+      transform: none;
+    }
+
+    #{$parent}__title,
+    #{$parent}__desc {
+      transition-delay: 0.2s;
+    }
+    #{$parent}__count {
+      transition-delay: 0.4s;
+    }
+  }
+}
+
+.furniture__title,
+.furniture .typography {
+  &[data-emergence="hidden"] {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  &[data-emergence="visible"] {
+    transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.steps {
+  $parent: &;
+  &[data-emergence="hidden"] {
+    .step,
+    #{$parent}__title {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+
+  &[data-emergence="visible"] {
+    .step,
+    #{$parent}__title {
+      transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+      opacity: 1;
+      transform: none;
+    }
+    @for $i from 1 through 7 {
+      .step:nth-child(#{$i}) {
+        transition-delay: #{$i * 0.15}s;
+      }
+    }
+  }
+}
+
+.construction-tilt,
+.packages,
+.project-slider,
+.service-title-block {
+  &[data-emergence="hidden"] {
+    opacity: 0;
+  }
+
+  &[data-emergence="visible"] {
+    transition: opacity $animSpeed $anim, transform $animSpeed $anim;
+    opacity: 1;
+    transform: none;
+  }
+}

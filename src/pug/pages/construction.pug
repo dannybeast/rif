@@ -16,7 +16,7 @@ block content
                 +e.SPAN.separator
                 span Строительство домов
 
-        +b.SECTION.page-intro
+        +b.SECTION.page-intro( data-emergence="hidden")
             +e.content
                 .container
                     +e.H2.title 
@@ -24,7 +24,7 @@ block content
             img(src="assets/images/intro/construction.jpg", alt="").js-parallax
         +b.SECTION.page-description(class="--gray")
             .container
-                +b.section-description
+                +b.section-description( data-emergence="hidden")
                     +e.row
                         +e.col
                             +b.H3.title(class="--strong hidden-sm") Строим дома под ключ в Краснодаре больше трёх лет   
@@ -32,7 +32,7 @@ block content
                             .typography.text-columns
                                 p Надёжность и долговечность — главные критерии при строительстве домов. Поэтому с нами работают специалисты выского уровня. Мы дорожим своей репутацией и прислушиваемся к вашим пожеланиям. 
                                 p Детальная проработка сметы и чертежей дома помогут достичь необходимого результата. Наша команда готова ответить на любые вопросы.
-        +b.SECTION.stages
+        +b.SECTION.stages( data-emergence="hidden")
             .container
                 +b.H3.title(class="--center-decoration") 
                     span Этапы воздведения дома
@@ -62,7 +62,7 @@ block content
                             +e.P.count 06
                             p Заборы и<br> ограждения
         
-        +b.SECTION.construction-tilt
+        +b.SECTION.construction-tilt(data-emergence="hidden")
             .container.js-tabs
                 +b.top-tabs
                     +e.H3.title Примеры наших проектов 
@@ -78,7 +78,7 @@ block content
                     .js-tab-content
                         +e.row
                             +e.col-large
-                                +b.construction-tilt-item
+                                +b.construction-tilt-item( data-emergence="hidden")
                                     img(src="assets/images/tilt/1.jpg", alt="")
                                     img(src="assets/images/tilt/1-sm.jpg", alt="")
                                     +e.content
@@ -89,7 +89,7 @@ block content
                                     
                         +e.row
                             +e.col
-                                +b.construction-tilt-item
+                                +b.construction-tilt-item( data-emergence="hidden")
                                     img(src="assets/images/tilt/2.jpg", alt="")
                                     img(src="assets/images/tilt/2-sm.jpg", alt="")
                                     +e.content
@@ -99,7 +99,7 @@ block content
                                             +e.P.price 3 000 000₽ 
                                     
                             +e.col
-                                +b.construction-tilt-item
+                                +b.construction-tilt-item( data-emergence="hidden")
                                     img(src="assets/images/tilt/3.jpg", alt="")
                                     img(src="assets/images/tilt/3-sm.jpg", alt="")
                                     +e.content
@@ -173,7 +173,7 @@ block content
                                         +e.col
                                             p S = 260 м<sup>2</sup>
                                             +e.P.price 3 000 000₽ 
-        +b.SECTION.calculate-form(class="--construction")
+        +b.SECTION.calculate-form(class="--construction" data-emergence="hidden")
             .container
                 +b.H3.title Расчитайте стоимость, материал дома и срок работы
                 +e.FORM.form.js-calc-construction-form
@@ -208,7 +208,7 @@ block content
                     +e.col
                         +b.BUTTON.btn(class="--neutral-primary --size-md") Получить расчёт
 
-        +b.SECTION.icons(class="--gray")
+        +b.SECTION.icons(class="--gray" data-emergence="hidden")
             .container
                 +b.H3.title Строим на совесть, внимательны к деталям
                 +e.row

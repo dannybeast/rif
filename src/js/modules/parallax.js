@@ -19,13 +19,13 @@ export default function() {
   new simpleParallax(imageScroll, {
     overflow: true,
     delay: 0.8,
-    transition: "cubic-bezier(0,0,0,1)",
+    //transition: "cubic-bezier(0,0,0,1)",
     orientation: "right",
   });
   new simpleParallax(imageScrollVertical, {
     overflow: true,
     delay: 0.8,
-    transition: "cubic-bezier(0,0,0,1)",
+    //transition: "cubic-bezier(0,0,0,1)",
     orientation: "down",
   });
 }

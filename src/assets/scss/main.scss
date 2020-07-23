@@ -22,6 +22,7 @@
 @import "modules/footer";
 @import "modules/modal";
 @import "modules/tabs";
+@import "modules/animations";
 
 html {
   line-height: $mainLineHeight;
@@ -515,7 +516,7 @@ body {
     }
     @include sm-block() {
       width: 100%;
-      margin-bottom: 25px;
+      margin-bottom: 40px;
       text-align: center;
       justify-content: center;
     }
@@ -555,7 +556,7 @@ body {
             height: 20px;
             left: 50%;
             transform: translateY(-50%);
-            margin: 15px 0 0 0;
+            margin: 20px 0 0 0;
           }
         }
       }

@@ -15,13 +15,13 @@ block content
                 +e.A(href="/") Главная
                 +e.SPAN.separator
                 span Дизайн интерьера
-        +b.SECTION.page-intro
+        +b.SECTION.page-intro( data-emergence="hidden")
             +e.content
                 .container
                     +e.H2.title 
                         span Уют начинается с интерьера в доме
             img(src="assets/images/intro/interior-design.jpg", alt="").js-parallax
-        +b.SECTION.ideas
+        +b.SECTION.ideas(data-emergence="hidden")
             .container
                 +b.H3.title Мы воплотим<br> ваши идеи в реальность
                 +e.row
@@ -34,7 +34,7 @@ block content
                     +e.col
                         .typography
                             p Вам хочется создать дом с подходящей обстановкой. Вместе с нами это будет просто. Обратитесь за консультацией и наш дизайнер спроектирует дизайн вашей мечты.
-        +b.SECTION.construction-tilt
+        +b.SECTION.construction-tilt(data-emergence="hidden")
             .container.js-tabs
                 +b.top-tabs
                     +e.H3.title Примеры наших проектов 
@@ -146,7 +146,7 @@ block content
                                         +e.desc
                                             p Краткое описание проекта
 
-        +b.SECTION.calculate-form(class="--construction")
+        +b.SECTION.calculate-form(class="--construction"  data-emergence="hidden")
             .container
                 form.js-calc-design-form
                     +e.top
@@ -191,7 +191,7 @@ block content
                         +e.col
                             +b.BUTTON.btn(class="--neutral-primary --size-md") Получить расчёт
 
-        +b.SECTION.icons(class="--gray")
+        +b.SECTION.icons(class="--gray"  data-emergence="hidden")
             .container
                 +b.H3.title РИФ.UG — ваш качественный подрядчик
                 +e.row

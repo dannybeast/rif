@@ -12,7 +12,7 @@ block content
         include ../includes/modules/header
 
         // Main Slider
-        +b.SECTION.main-slider
+        +b.SECTION.main-slider(data-emergence="hidden")
             .swiper-container
                 .swiper-wrapper
                     .swiper-slide
@@ -75,7 +75,7 @@ block content
                                         | / 
                                     | 01
                         .slider-dots
-        +b.SECTION.advantages
+        +b.SECTION.advantages(data-emergence="hidden")
             .container
                 +b.H3.title Почему выбирают нас
                 +e.row
@@ -94,7 +94,7 @@ block content
         +b.overlay-gray
             +b.SECTION.services
                 .container
-                    +b.section-description
+                    +b.section-description(data-emergence="hidden")
                         +e.row
                             +e.col
                                 +b.H3.title Наши услуги
@@ -103,14 +103,14 @@ block content
                                     p Наша компания оказывает полный комлекс услуг в сфере создания, обустройства и ремонта помещений. 
                                     p Опыт и надежность — наши основные преимущества перед конкурентами.
                                     p.hidden-sm Ваши пожелания учитываются на каждом этапе. Мы придерживаемся гибкого подхода к каждому клиенту. Ваши желания будут услышаны.
-                    +b.design-interior
+                    +b.design-interior(data-emergence="hidden")
                         +e.image
                             img(src="assets/images/design.jpg", alt="").js-parallax-scroll
                         +b.H3.title(class="--before-line") Дизайн интерьера
                         +b.service-title-block
                             +e.H3.title Дизайн интерьера
                             img(src="assets/images/design-sm.jpg", alt="")
-                    +b.ideas
+                    +b.ideas(data-emergence="hidden")
                         +b.H3.title Мы воплотим<br> ваши идеи в реальность
                         +e.row
                             +e.col
@@ -160,7 +160,7 @@ block content
                     // visible desktop
                     +e.row
                         +e.col(class="--large")
-                            +b.design-card(style="background-image:url('assets/images/design-cards/1.jpg')")
+                            +b.design-card(data-emergence="hidden" style="background-image:url('assets/images/design-cards/1.jpg')")
                                 +e.H4.title Дизайн помещения квартиры
                                 +e.content
                                     +b.item-element.typography
@@ -168,21 +168,21 @@ block content
                                     +b.item-element.typography
                                         p Панорманые окна помогают дополнить атмосферу роскоши и неповторимости. Все материалы подбирались в процессе разработки дизайна. Что позволило воплотить задуманное по выгодным ценам.
                         +e.col
-                            +b.design-card(style="background-image:url('assets/images/design-cards/2.jpg')")
+                            +b.design-card(data-emergence="hidden" style="background-image:url('assets/images/design-cards/2.jpg')")
                                 +e.H4.title Дизайн помещения частного дома
                                 +e.content
                                     +b.item-element.typography
                                         p Утонченные решения в сочетании с мебелью, превратили квартиру в центре Краснодара в место уюта и гармонии. Цветовая схема выстроенна под индивидуальный запрос клиента. 
                                         p Панорманые окна помогают дополнить атмосферу роскоши и неповторимости. Все материалы подбирались в процессе разработки дизайна. Что позволило воплотить задуманное по выгодным ценам.
                         +e.col
-                            +b.design-card(style="background-image:url('assets/images/design-cards/3.jpg')")
+                            +b.design-card(data-emergence="hidden" style="background-image:url('assets/images/design-cards/3.jpg')")
                                 +e.H4.title Дизайн помещения коттеджа
                                 +e.content
                                     +b.item-element.typography
                                         p Утонченные решения в сочетании с мебелью, превратили квартиру в центре Краснодара в место уюта и гармонии. Цветовая схема выстроенна под индивидуальный запрос клиента. 
                                         p Панорманые окна помогают дополнить атмосферу роскоши и неповторимости. Все материалы подбирались в процессе разработки дизайна. Что позволило воплотить задуманное по выгодным ценам.
                         +e.col(class="--large")
-                            +b.design-card(style="background-image:url('assets/images/design-cards/4.jpg')")
+                            +b.design-card(data-emergence="hidden" style="background-image:url('assets/images/design-cards/4.jpg')")
                                 +e.H4.title Дизайн коммерческого помещения
                                 +e.content
                                     +b.item-element.typography
@@ -193,11 +193,11 @@ block content
                                                        
             +b.SECTION.repairs
                 .container
-                    +b.section-description
+                    +b.section-description(data-emergence="hidden")
                         +e.row
                             +e.col
                                 +e.H3.title Ремонт
-                                +b.service-title-block
+                                +b.service-title-block(data-emergence="hidden")
                                     +e.H3.title Ремонт
                                     img(src="assets/images/repairs-sm.jpg", alt="")
                                 +e.desc
@@ -215,34 +215,34 @@ block content
                     +b.repairs-packages
                         +e.row
                             +e.col
-                                +b.repairs-package
+                                +b.repairs-package(data-emergence="hidden")
                                     +e.image
-                                        img(src="assets/images/repairs-packages/1.jpg", alt="")
+                                        img(src="assets/images/repairs-packages/1.jpg", alt="").js-parallax
                                     +e.bottom
                                         +e.P.title Базовый
                                         +e.P.price 9000 руб. за м<sup>2</sup>
                             +e.col
-                                +b.repairs-package
+                                +b.repairs-package(data-emergence="hidden")
                                     +e.image
-                                        img(src="assets/images/repairs-packages/2.jpg", alt="")
+                                        img(src="assets/images/repairs-packages/2.jpg", alt="").js-parallax
                                     +e.bottom
                                         +e.P.title Комфорт
                                         +e.P.price 11000 руб. за м<sup>2</sup>
                             +e.col
-                                +b.repairs-package
+                                +b.repairs-package(data-emergence="hidden")
                                     +e.image
-                                        img(src="assets/images/repairs-packages/3.jpg", alt="")
+                                        img(src="assets/images/repairs-packages/3.jpg", alt="").js-parallax
                                     +e.bottom
                                         +e.P.title Премиум
                                         +e.P.price 13500 руб. за м<sup>2</sup>
                     include ../includes/modules/calc
             +b.SECTION.construction
                 .container
-                    +b.SECTION.section-description
+                    +b.SECTION.section-description(data-emergence="hidden")
                         +e.row
                             +e.col
                                 +e.H3.title Строительство домов
-                                +b.service-title-block
+                                +b.service-title-block(data-emergence="hidden")
                                     +e.H3.title Строительство домов
                                     img(src="assets/images/home.jpg", alt="")
                             +e.col
@@ -250,7 +250,7 @@ block content
                                 .typography.text-columns
                                     p Надёжность и долговечность — главные критерии при строительстве домов. Поэтому с нами работают специалисты выского уровня. Мы дорожим своей репутацией и прислушиваемся к вашим пожеланиям. 
                                     p.hidden-sm Детальная проработка сметы и чертежей дома помогут достичь необходимого результата. Наша команда готова ответить на любые вопросы.
-                    +b.SECTION.stages
+                    +b.SECTION.stages(data-emergence="hidden")
                         +b.H3.title Этапы воздведения дома
                         +e.row
                             +e.col
@@ -280,7 +280,7 @@ block content
                     +b.construction-tilt
                         +e.row
                             +e.col-large
-                                +b.construction-tilt-item
+                                +b.construction-tilt-item(data-emergence="hidden")
                                     img(src="assets/images/tilt/1.jpg", alt="").js-parallax
                                     img(src="assets/images/tilt/1-sm.jpg", alt="")
                                     +e.content
@@ -291,8 +291,8 @@ block content
                                     
                         +e.row
                             +e.col
-                                +b.construction-tilt-item
-                                    img(src="assets/images/tilt/2.jpg", alt="").js-parallax
+                                +b.construction-tilt-item(data-emergence="hidden")
+                                    img(src="assets/images/tilt/2.jpg", alt="").js-parallax-right
                                     img(src="assets/images/tilt/2-sm.jpg", alt="")
                                     +e.content
                                         +e.P.title «СЕНЬОР»
@@ -301,15 +301,15 @@ block content
                                             +e.P.price 3 000 000₽ 
                                     
                             +e.col
-                                +b.construction-tilt-item
-                                    img(src="assets/images/tilt/3.jpg", alt="").js-parallax-right
+                                +b.construction-tilt-item(data-emergence="hidden")
+                                    img(src="assets/images/tilt/3.jpg", alt="").js-parallax
                                     img(src="assets/images/tilt/3-sm.jpg", alt="")
                                     +e.content
                                         +e.P.title «ВЕЛЬМОЖА»
                                         +e.col
                                             p S = 260 м<sup>2</sup>
                                             +e.P.price 3 000 000₽ 
-        +b.SECTION.icons
+        +b.SECTION.icons(data-emergence="hidden")
             .container
                 +b.H3.title Мы экономим ваш бюджет и время
                 +e.row

@@ -15,13 +15,13 @@ block content
                 +e.A(href="/") Главная
                 +e.SPAN.separator
                 span Ремонт
-        +b.SECTION.page-intro
+        +b.SECTION.page-intro( data-emergence="hidden")
             +e.content
                 .container
                     +e.H2.title 
                         span Ремонт бывает с таким завершением
             img(src="assets/images/intro/repairs.jpg", alt="").js-parallax
-        +b.SECTION.page-preview
+        +b.SECTION.page-preview( data-emergence="hidden")
             .container
                 +e.H3.title Перед осуществлением ремонта, наши специалисты бесплатно приедут на объект для того, чтобы оценить:
                 +e.row
@@ -33,7 +33,7 @@ block content
                         p Соответствие интерьера модным трендам
                     +b.repairs-item
                         p Изношенность инженерных сетей
-        +b.SECTION.packages
+        +b.SECTION.packages(data-emergence="hidden")
             .container
                 +e.row.js-tabs
                     +e.aside
@@ -207,7 +207,7 @@ block content
                                     +e.LI Спальный гарнитур - 56500₽   
 
 
-        +b.SECTION.calculate-form(class="--construction")
+        +b.SECTION.calculate-form(class="--construction" data-emergence="hidden")
             .container
                 form.js-calc-repairs-form
                     +e.top
@@ -246,7 +246,7 @@ block content
                                 input(type="text" name="phone" class="js-phone-mask" placeholder="+7 (   ) ")
                         +e.col
                             +b.BUTTON.btn(class="--neutral-primary --size-md") Получить расчёт
-        +b.SECTION.projects-slider
+        +b.SECTION.projects-slider(data-emergence="hidden")
             .container
                 +e.H3.title Выполненые проекты
                 .swiper-prev
@@ -269,7 +269,7 @@ block content
                                 +e.content(data-swiper-parallax="-100" data-swiper-parallax-duration="600")
                                     p Евроремонт квартиры 80 м2
 
-        +b.SECTION.icons(class="--gray")
+        +b.SECTION.icons(class="--gray" data-emergence="hidden")
             .container
                 +b.H3.title Почему вы можете доверить нам ремонт вашего помещения
                 +e.row

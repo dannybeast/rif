@@ -15,13 +15,13 @@ block content
                 +e.A(href="/") Главная
                 +e.SPAN.separator
                 span Мебель на заказ
-        +b.SECTION.page-intro
+        +b.SECTION.page-intro( data-emergence="hidden")
             +e.content
                 .container
                     +e.H2.title 
                         span Мебель сделанная с душой специально для вас
             img(src="assets/images/intro/made-furniture.jpg", alt="").js-parallax
-        +b.SECTION.advantages
+        +b.SECTION.advantages( data-emergence="hidden")
             .container
                 +b.H3.title Почему у нас стоит заказывать мебель
                 +e.row
@@ -38,27 +38,27 @@ block content
 
             +b.SECTION.furniture
                 .container
-                    +e.H3.title.hidden-sm Мебель под заказ
+                    +e.H3.title.hidden-sm(data-emergence="hidden") Мебель под заказ
                     +e.row
                         +e.col.hidden-sm
                             section
-                                +b.quote
+                                +b.quote(data-emergence="hidden") 
                                     p Мы индивидуально подбираем дизайн и материалы, исходя из вашего бюджета
                                 img(src="assets/images/furniture/1.jpg", alt="").js-parallax
                             section
-                                +b.quote(class="--before-line")
+                                +b.quote(class="--before-line" data-emergence="hidden") 
                                     p К каждому проекту готовится технический задание, с точными размерами и подбором мебельной фурнитуры и материалов
                                 img(src="assets/images/furniture/2.jpg", alt="").js-parallax
                         +e.col
                             section.hidden-sm
-                                .typography
+                                .typography(data-emergence="hidden") 
                                     p Разработайте вместе с нашими дизайнерами уникальную мебель для вашего дома или квартиры. Широкий выбор материалов, фурнитуры и форм помогут удовлетворить самый взыскательный вкус.
                                     p Мы  полонстью контролируем весь процесс создания мебели. Это помогает избежать брака.
                             section.hidden-sm
-                                +b.quote(class="--before-line")
+                                +b.quote(class="--before-line" data-emergence="hidden") 
                                     p Собственное производство — лучшее доказательство широких технических возможностей
                                 img(src="assets/images/furniture/3.jpg", alt="").js-parallax-right
-                            +b.SECTION.steps
+                            +b.SECTION.steps(data-emergence="hidden")
                                 +e.H3.title Порядок работы
                                 +b.step
                                     +e.P.count 01
@@ -83,7 +83,7 @@ block content
                                     +e.P.title Сборка, доставка и установка
 
 
-        +b.SECTION.icons
+        +b.SECTION.icons( data-emergence="hidden")
             .container
                 +b.H3.title РИФ.UG — ваш качественный подрядчик
                 +e.row
