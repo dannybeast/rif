@@ -27,6 +27,8 @@ export default function() {
     parallax: true,
     spaceBetween: 0,
     loop: true,
+    preloadImages: false,
+    lazy: true,
     pagination:
       window.innerWidth >= 768 ? introPaginationDesktop : introPaginationMobile,
     autoplay: {

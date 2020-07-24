@@ -25,7 +25,8 @@ block content
                                             p Ремонт помещений, создание дизайн-проекта или постройка дома под ключ. Нам это под силу
                                         +e.bottom
                                             +b.A( class="btn --neutral-primary js-scrollTo-answer") Бесплатная консультация
-                            img(src="assets/images/main-slider/1.jpg", alt=""  )
+                            img(data-src="assets/images/main-slider/1.jpg", alt=""  ).swiper-lazy
+                            .swiper-lazy-preloader
                     .swiper-slide
                         +b.main-slide
                             +e.overlay
@@ -36,7 +37,8 @@ block content
                                             p Сделаем для вас ремонт в срок и качественно. Вам не очем беспокоится, семье понравится.
                                         +e.bottom
                                             +b.A(class="btn --neutral-primary js-scrollTo-answer") Бесплатная консультация
-                            img(src="assets/images/main-slider/2.jpg", alt=""  )
+                            img(data-src="assets/images/main-slider/2.jpg", alt=""  ).swiper-lazy
+                            .swiper-lazy-preloader
                     .swiper-slide
                         +b.main-slide
                             +e.overlay
@@ -47,7 +49,8 @@ block content
                                             p Разработаем для вас дизайн помещения с учетом пожеланий. Нам под силу реализовать ваши мечты
                                         +e.bottom
                                             +b.A(class="btn --neutral-primary js-scrollTo-answer") Бесплатная консультация
-                            img(src="assets/images/main-slider/3.jpg", alt=""  )
+                            img(data-src="assets/images/main-slider/3.jpg", alt=""  ).swiper-lazy
+                            .swiper-lazy-preloader
                     .swiper-slide
                         +b.main-slide
                             +e.overlay
@@ -58,7 +61,8 @@ block content
                                             p Строительство современных домов
                                         +e.bottom
                                             +b.A(href="#" class="btn --neutral-primary") Бесплатная консультация
-                            img(src="assets/images/main-slider/4.jpg", alt="" )
+                            img(data-src="assets/images/main-slider/4.jpg", alt="" ).swiper-lazy
+                            .swiper-lazy-preloader
                 +e.nav
                     .container
                         +b.slider-nav-module
@@ -105,11 +109,11 @@ block content
                                     p.hidden-sm Ваши пожелания учитываются на каждом этапе. Мы придерживаемся гибкого подхода к каждому клиенту. Ваши желания будут услышаны.
                     +b.design-interior(data-emergence="hidden")
                         +e.image
-                            img(src="assets/images/design.jpg", alt="").js-parallax-scroll
+                            img(data-src="assets/images/design.jpg", alt="").js-parallax-scroll.js-lazy
                         +b.H3.title(class="--before-line") Дизайн интерьера
-                        +b.service-title-block
+                        +b.service-title-block(data-emergence="hidden")
                             +e.H3.title Дизайн интерьера
-                            img(src="assets/images/design-sm.jpg", alt="")
+                            img(data-src="assets/images/design-sm.jpg", alt="").js-lazy
                     +b.ideas(data-emergence="hidden")
                         +b.H3.title Мы воплотим<br> ваши идеи в реальность
                         +e.row
@@ -126,7 +130,7 @@ block content
             +b.SECTION.design-cards
                 .container
                     // visible mobile
-                    +e.slider
+                    +e.slider(data-emergence="hidden")
                         .swiper-container
                             .swiper-wrapper
                                 .swiper-slide
@@ -160,7 +164,7 @@ block content
                     // visible desktop
                     +e.row
                         +e.col(class="--large")
-                            +b.design-card(data-emergence="hidden" style="background-image:url('assets/images/design-cards/1.jpg')")
+                            +b.design-card.js-lazy(data-emergence="hidden" data-src="assets/images/design-cards/1.jpg" style="background-image:url('assets/images/thumbnail.gif')")
                                 +e.H4.title Дизайн помещения квартиры
                                 +e.content
                                     +b.item-element.typography
@@ -168,21 +172,21 @@ block content
                                     +b.item-element.typography
                                         p Панорманые окна помогают дополнить атмосферу роскоши и неповторимости. Все материалы подбирались в процессе разработки дизайна. Что позволило воплотить задуманное по выгодным ценам.
                         +e.col
-                            +b.design-card(data-emergence="hidden" style="background-image:url('assets/images/design-cards/2.jpg')")
+                            +b.design-card.js-lazy(data-emergence="hidden" data-src="assets/images/design-cards/2.jpg" style="background-image:url('assets/images/thumbnail.gif')")
                                 +e.H4.title Дизайн помещения частного дома
                                 +e.content
                                     +b.item-element.typography
                                         p Утонченные решения в сочетании с мебелью, превратили квартиру в центре Краснодара в место уюта и гармонии. Цветовая схема выстроенна под индивидуальный запрос клиента. 
                                         p Панорманые окна помогают дополнить атмосферу роскоши и неповторимости. Все материалы подбирались в процессе разработки дизайна. Что позволило воплотить задуманное по выгодным ценам.
                         +e.col
-                            +b.design-card(data-emergence="hidden" style="background-image:url('assets/images/design-cards/3.jpg')")
+                            +b.design-card.js-lazy(data-emergence="hidden" data-src="assets/images/design-cards/3.jpg" style="background-image:url('assets/images/thumbnail.gif')")
                                 +e.H4.title Дизайн помещения коттеджа
                                 +e.content
                                     +b.item-element.typography
                                         p Утонченные решения в сочетании с мебелью, превратили квартиру в центре Краснодара в место уюта и гармонии. Цветовая схема выстроенна под индивидуальный запрос клиента. 
                                         p Панорманые окна помогают дополнить атмосферу роскоши и неповторимости. Все материалы подбирались в процессе разработки дизайна. Что позволило воплотить задуманное по выгодным ценам.
                         +e.col(class="--large")
-                            +b.design-card(data-emergence="hidden" style="background-image:url('assets/images/design-cards/4.jpg')")
+                            +b.design-card.js-lazy(data-emergence="hidden" data-src="assets/images/design-cards/4.jpg" style="background-image:url('assets/images/thumbnail.gif')")
                                 +e.H4.title Дизайн коммерческого помещения
                                 +e.content
                                     +b.item-element.typography
@@ -199,7 +203,7 @@ block content
                                 +e.H3.title Ремонт
                                 +b.service-title-block(data-emergence="hidden")
                                     +e.H3.title Ремонт
-                                    img(src="assets/images/repairs-sm.jpg", alt="")
+                                    img(data-src="assets/images/repairs-sm.jpg", alt="").js-lazy
                                 +e.desc
                                     p Перед осуществлением ремонта, наши специалисты бесплатно приедут на объект для того, чтобы оценить:
                             +e.col
@@ -217,21 +221,21 @@ block content
                             +e.col
                                 +b.repairs-package(data-emergence="hidden")
                                     +e.image
-                                        img(src="assets/images/repairs-packages/1.jpg", alt="").js-parallax
+                                        img(data-src="assets/images/repairs-packages/1.jpg", alt="").js-parallax.js-lazy
                                     +e.bottom
                                         +e.P.title Базовый
                                         +e.P.price 9000 руб. за м<sup>2</sup>
                             +e.col
                                 +b.repairs-package(data-emergence="hidden")
                                     +e.image
-                                        img(src="assets/images/repairs-packages/2.jpg", alt="").js-parallax
+                                        img(data-src="assets/images/repairs-packages/2.jpg", alt="").js-parallax.js-lazy
                                     +e.bottom
                                         +e.P.title Комфорт
                                         +e.P.price 11000 руб. за м<sup>2</sup>
                             +e.col
                                 +b.repairs-package(data-emergence="hidden")
                                     +e.image
-                                        img(src="assets/images/repairs-packages/3.jpg", alt="").js-parallax
+                                        img(data-src="assets/images/repairs-packages/3.jpg", alt="").js-parallax.js-lazy
                                     +e.bottom
                                         +e.P.title Премиум
                                         +e.P.price 13500 руб. за м<sup>2</sup>
@@ -244,7 +248,7 @@ block content
                                 +e.H3.title Строительство домов
                                 +b.service-title-block(data-emergence="hidden")
                                     +e.H3.title Строительство домов
-                                    img(src="assets/images/home.jpg", alt="")
+                                    img(data-src="assets/images/home.jpg", alt="").js-lazy
                             +e.col
                                 +b.H4.title Строим дома под ключ в Краснодаре больше трёх лет   
                                 .typography.text-columns
@@ -281,8 +285,8 @@ block content
                         +e.row
                             +e.col-large
                                 +b.construction-tilt-item(data-emergence="hidden")
-                                    img(src="assets/images/tilt/1.jpg", alt="").js-parallax
-                                    img(src="assets/images/tilt/1-sm.jpg", alt="")
+                                    img(data-src="assets/images/tilt/1.jpg", alt="").js-parallax.js-lazy
+                                    img(data-src="assets/images/tilt/1-sm.jpg", alt="").js-lazy
                                     +e.content
                                         +e.P.title «МАГИСТР»
                                         +e.col
@@ -292,8 +296,8 @@ block content
                         +e.row
                             +e.col
                                 +b.construction-tilt-item(data-emergence="hidden")
-                                    img(src="assets/images/tilt/2.jpg", alt="").js-parallax-right
-                                    img(src="assets/images/tilt/2-sm.jpg", alt="")
+                                    img(data-src="assets/images/tilt/2.jpg", alt="").js-parallax-right.js-lazy
+                                    img(data-src="assets/images/tilt/2-sm.jpg", alt="").js-lazy
                                     +e.content
                                         +e.P.title «СЕНЬОР»
                                         +e.col
@@ -302,8 +306,8 @@ block content
                                     
                             +e.col
                                 +b.construction-tilt-item(data-emergence="hidden")
-                                    img(src="assets/images/tilt/3.jpg", alt="").js-parallax
-                                    img(src="assets/images/tilt/3-sm.jpg", alt="")
+                                    img(data-src="assets/images/tilt/3.jpg", alt="").js-parallax.js-lazy
+                                    img(fata-src="assets/images/tilt/3-sm.jpg", alt="").js-lazy
                                     +e.content
                                         +e.P.title «ВЕЛЬМОЖА»
                                         +e.col

@@ -3,6 +3,7 @@
   &[data-emergence="hidden"] {
     .advantage {
       opacity: 0;
+      will-change: transform;
       transform: translateX(-20px);
       @include sm-block() {
         transform: translateY(-20px);
@@ -10,6 +11,7 @@
     }
     .title {
       opacity: 0;
+      will-change: transform;
       transform: translateY(-20px);
     }
   }
@@ -37,6 +39,7 @@
   &[data-emergence="hidden"] {
     #{$parent}__col {
       opacity: 0;
+      will-change: transform;
       transform: translateY(-20px);
     }
   }
@@ -60,10 +63,12 @@
   &[data-emergence="hidden"] {
     .title {
       opacity: 0;
+      will-change: transform;
       transform: translateX(20px);
     }
     #{$parent}__image {
       opacity: 0;
+      will-change: transform;
     }
   }
 
@@ -85,10 +90,12 @@
   &[data-emergence="hidden"] {
     #{$parent}__content {
       opacity: 0;
+      will-change: transform;
       transform: translateX(20px);
     }
     #{$parent}__media {
       opacity: 0;
+      will-change: transform;
     }
   }
 
@@ -110,14 +117,17 @@
   &[data-emergence="hidden"] {
     .title {
       opacity: 0;
+      will-change: transform;
       transform: translateY(-20px);
     }
     #{$parent}__col {
       opacity: 0;
+      will-change: transform;
       transform: translateY(-20px);
       .typography {
         &:before {
           opacity: 0;
+          will-change: transform;
         }
       }
     }
@@ -150,11 +160,13 @@
   &[data-emergence="hidden"] {
     #{$parent}__image {
       opacity: 0;
+      will-change: transform;
       transform: translateY(-20px);
     }
     #{$parent}__title,
     #{$parent}__desc {
       opacity: 0;
+      will-change: transform;
       transform: translateY(20px);
     }
   }
@@ -178,13 +190,16 @@
   $parent: &;
   &[data-emergence="hidden"] {
     opacity: 0;
+    will-change: transform;
     transform: scale(0.9);
     .item-element {
       opacity: 0;
+      will-change: transform;
       transform: translateY(20px);
     }
     #{$parent}__title {
       opacity: 0;
+      will-change: transform;
       transform: translateY(-20px);
     }
   }
@@ -213,10 +228,12 @@
   &[data-emergence="hidden"] {
     #{$parent}__image {
       opacity: 0;
+      will-change: transform;
       transform: translateY(-20px);
     }
     #{$parent}__bottom {
       opacity: 0;
+      will-change: transform;
       transform: translateY(20px);
     }
   }
@@ -240,10 +257,12 @@
     #{$parent}__col,
     .radio-group {
       opacity: 0;
+      will-change: transform;
       transform: translateY(-20px);
     }
     .title {
       opacity: 0;
+      will-change: transform;
       transform: translateY(-20px);
     }
   }
@@ -273,10 +292,12 @@
   &[data-emergence="hidden"] {
     #{$parent}__col {
       opacity: 0;
+      will-change: transform;
       transform: translateX(20px);
     }
     .title {
       opacity: 0;
+      will-change: transform;
       transform: translateY(-20px);
     }
   }
@@ -303,9 +324,11 @@
   $parent: &;
   &[data-emergence="hidden"] {
     opacity: 0;
+    will-change: transform;
     transform: scale(0.9);
     #{$parent}__content {
       opacity: 0;
+      will-change: transform;
       transform: translateX(20px);
       @include sm-block() {
         transform: translateY(-20px);
@@ -313,6 +336,7 @@
     }
     #{$parent}__form {
       opacity: 0;
+      will-change: transform;
       transform: translateY(20px);
     }
   }
@@ -342,6 +366,7 @@
   &[data-emergence="hidden"] {
     #{$parent}__col {
       opacity: 0;
+      will-change: transform;
       transform: translateX(-20px);
       @include sm-block() {
         transform: translateY(-20px);
@@ -349,6 +374,7 @@
     }
     .title {
       opacity: 0;
+      will-change: transform;
       transform: translateY(-20px);
     }
   }
@@ -374,9 +400,11 @@
   $parent: &;
   &[data-emergence="hidden"] {
     opacity: 0;
+    will-change: transform;
     transform: scale(0.9);
     #{$parent}__content {
       opacity: 0;
+      will-change: transform;
       transform: translateY(20px);
     }
   }
@@ -402,8 +430,10 @@
 
   &[data-emergence="hidden"] {
     opacity: 0;
+    will-change: transform;
     #{$parent}__title {
       opacity: 0;
+      will-change: transform;
       transform: translateX(-20px);
     }
   }
@@ -429,6 +459,7 @@
   &[data-emergence="hidden"] {
     .repairs-item {
       opacity: 0;
+      will-change: transform;
       transform: translateX(-20px);
       @include sm-block() {
         transform: translateY(-20px);
@@ -436,6 +467,7 @@
     }
     #{$parent}__title {
       opacity: 0;
+      will-change: transform;
       transform: translateY(-20px);
     }
   }
@@ -462,13 +494,16 @@
   &[data-emergence="hidden"] {
     .main-slide {
       opacity: 0;
+      will-change: transform;
     }
     .main-slide__overlay {
       opacity: 0;
+      will-change: transform;
       transform: translateX(-20px);
     }
     .main-slider__nav {
       opacity: 0;
+      will-change: transform;
       transform: translateY(20px);
     }
   }
@@ -495,6 +530,7 @@
   $parent: &;
   &[data-emergence="hidden"] {
     opacity: 0;
+    will-change: transform;
     transform: translateX(-20px);
   }
 
@@ -509,6 +545,7 @@
   $parent: &;
   &[data-emergence="hidden"] {
     opacity: 0;
+    will-change: transform;
     transform: translateY(20px);
   }
 
@@ -525,14 +562,17 @@
     #{$parent}__title,
     #{$parent}__desc {
       opacity: 0;
+      will-change: transform;
       transform: translateX(20px);
     }
     #{$parent}__count {
       opacity: 0;
+      will-change: transform;
       transform: translateY(20px);
     }
     #{$parent}__image {
       opacity: 0;
+      will-change: transform;
       transform: translateX(-20px);
     }
   }
@@ -561,6 +601,7 @@
 .furniture .typography {
   &[data-emergence="hidden"] {
     opacity: 0;
+    will-change: transform;
     transform: translateY(-20px);
   }
 
@@ -577,6 +618,7 @@
     .step,
     #{$parent}__title {
       opacity: 0;
+      will-change: transform;
       transform: translateY(-20px);
     }
   }
@@ -599,9 +641,11 @@
 .construction-tilt,
 .packages,
 .project-slider,
-.service-title-block {
+.service-title-block,
+.design-cards__slider {
   &[data-emergence="hidden"] {
     opacity: 0;
+    will-change: transform;
   }
 
   &[data-emergence="visible"] {

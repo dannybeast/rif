@@ -35,7 +35,7 @@ import "./js/forms/calc-repairs";
 
 document.addEventListener("DOMContentLoaded", function() {
   animations();
-
+  lazyload(document.querySelectorAll(".js-lazy"));
   // Tabs
   let $tabs = $(".js-tabs");
 
@@ -76,8 +76,22 @@ window.onload = function() {
   setTimeout(() => {
     mobileNavigation();
     if (document.querySelector(".js-scrollTo-answer")) {
-      scrollTo(".js-scrollTo-answer", ".answers__block", "0");
+      scrollTo(".js-scrollTo-answer", ".answers", "0");
+    }
+    if (document.querySelector(".js-scrollTo-begining")) {
+      scrollTo(".js-scrollTo-begining", ".header", "0");
     }
   }, 500);
+
+  $(window).scroll(function() {
+    var top = $(document).scrollTop();
+
+    if (top > 10) {
+      $(".to-begining").removeClass("hide");
+    } else {
+      $(".to-begining").addClass("hide");
+    }
+  });
+
   hideLoader();
 };

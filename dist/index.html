@@ -6,6 +6,7 @@
     <title>Риф.юг</title>
     <meta name="description" content="">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preload" href="assets/css/app.css" as="style">
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
   <body>
@@ -59,7 +60,8 @@
                         </div>
                       </div>
                     </div>
-                  </div><img src="assets/images/main-slider/1.jpg" alt="">
+                  </div><img class="swiper-lazy" data-src="assets/images/main-slider/1.jpg" alt="">
+                  <div class="swiper-lazy-preloader"></div>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -76,7 +78,8 @@
                         </div>
                       </div>
                     </div>
-                  </div><img src="assets/images/main-slider/2.jpg" alt="">
+                  </div><img class="swiper-lazy" data-src="assets/images/main-slider/2.jpg" alt="">
+                  <div class="swiper-lazy-preloader"></div>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -93,7 +96,8 @@
                         </div>
                       </div>
                     </div>
-                  </div><img src="assets/images/main-slider/3.jpg" alt="">
+                  </div><img class="swiper-lazy" data-src="assets/images/main-slider/3.jpg" alt="">
+                  <div class="swiper-lazy-preloader"></div>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -110,7 +114,8 @@
                         </div>
                       </div>
                     </div>
-                  </div><img src="assets/images/main-slider/4.jpg" alt="">
+                  </div><img class="swiper-lazy" data-src="assets/images/main-slider/4.jpg" alt="">
+                  <div class="swiper-lazy-preloader"></div>
                 </div>
               </div>
             </div>
@@ -185,13 +190,13 @@
                 </div>
               </div>
               <div class="design-interior" data-emergence="hidden">
-                <div class="design-interior__image"><img class="js-parallax-scroll" src="assets/images/design.jpg" alt="">
+                <div class="design-interior__image"><img class="js-parallax-scroll js-lazy" data-src="assets/images/design.jpg" alt="">
                 </div>
                 <h3 class="title title--before-line">Дизайн интерьера
                 </h3>
-                <div class="service-title-block">
+                <div class="service-title-block" data-emergence="hidden">
                   <h3 class="service-title-block__title">Дизайн интерьера
-                  </h3><img src="assets/images/design-sm.jpg" alt="">
+                  </h3><img class="js-lazy" data-src="assets/images/design-sm.jpg" alt="">
                 </div>
               </div>
               <div class="ideas" data-emergence="hidden">
@@ -220,7 +225,7 @@
           <section class="design-cards">
             <div class="container">
               <!-- visible mobile-->
-              <div class="design-cards__slider">
+              <div class="design-cards__slider" data-emergence="hidden">
                 <div class="swiper-container">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -273,7 +278,7 @@
               <!-- visible desktop-->
               <div class="design-cards__row">
                 <div class="design-cards__col design-cards__col--large">
-                  <div class="design-card" data-emergence="hidden" style="background-image:url('assets/images/design-cards/1.jpg')">
+                  <div class="design-card js-lazy" data-emergence="hidden" data-src="assets/images/design-cards/1.jpg" style="background-image:url('assets/images/thumbnail.gif')">
                     <h4 class="design-card__title">Дизайн помещения квартиры
                     </h4>
                     <div class="design-card__content">
@@ -287,7 +292,7 @@
                   </div>
                 </div>
                 <div class="design-cards__col">
-                  <div class="design-card" data-emergence="hidden" style="background-image:url('assets/images/design-cards/2.jpg')">
+                  <div class="design-card js-lazy" data-emergence="hidden" data-src="assets/images/design-cards/2.jpg" style="background-image:url('assets/images/thumbnail.gif')">
                     <h4 class="design-card__title">Дизайн помещения частного дома
                     </h4>
                     <div class="design-card__content">
@@ -299,7 +304,7 @@
                   </div>
                 </div>
                 <div class="design-cards__col">
-                  <div class="design-card" data-emergence="hidden" style="background-image:url('assets/images/design-cards/3.jpg')">
+                  <div class="design-card js-lazy" data-emergence="hidden" data-src="assets/images/design-cards/3.jpg" style="background-image:url('assets/images/thumbnail.gif')">
                     <h4 class="design-card__title">Дизайн помещения коттеджа
                     </h4>
                     <div class="design-card__content">
@@ -311,7 +316,7 @@
                   </div>
                 </div>
                 <div class="design-cards__col design-cards__col--large">
-                  <div class="design-card" data-emergence="hidden" style="background-image:url('assets/images/design-cards/4.jpg')">
+                  <div class="design-card js-lazy" data-emergence="hidden" data-src="assets/images/design-cards/4.jpg" style="background-image:url('assets/images/thumbnail.gif')">
                     <h4 class="design-card__title">Дизайн коммерческого помещения
                     </h4>
                     <div class="design-card__content">
@@ -336,7 +341,7 @@
                     </h3>
                     <div class="service-title-block" data-emergence="hidden">
                       <h3 class="service-title-block__title">Ремонт
-                      </h3><img src="assets/images/repairs-sm.jpg" alt="">
+                      </h3><img class="js-lazy" data-src="assets/images/repairs-sm.jpg" alt="">
                     </div>
                     <div class="section-description__desc">
                       <p>Перед осуществлением ремонта, наши специалисты бесплатно приедут на объект для того, чтобы оценить:</p>
@@ -364,7 +369,7 @@
                 <div class="repairs-packages__row">
                   <div class="repairs-packages__col">
                     <div class="repairs-package" data-emergence="hidden">
-                      <div class="repairs-package__image"><img class="js-parallax" src="assets/images/repairs-packages/1.jpg" alt="">
+                      <div class="repairs-package__image"><img class="js-parallax js-lazy" data-src="assets/images/repairs-packages/1.jpg" alt="">
                       </div>
                       <div class="repairs-package__bottom">
                         <p class="repairs-package__title">Базовый
@@ -376,7 +381,7 @@
                   </div>
                   <div class="repairs-packages__col">
                     <div class="repairs-package" data-emergence="hidden">
-                      <div class="repairs-package__image"><img class="js-parallax" src="assets/images/repairs-packages/2.jpg" alt="">
+                      <div class="repairs-package__image"><img class="js-parallax js-lazy" data-src="assets/images/repairs-packages/2.jpg" alt="">
                       </div>
                       <div class="repairs-package__bottom">
                         <p class="repairs-package__title">Комфорт
@@ -388,7 +393,7 @@
                   </div>
                   <div class="repairs-packages__col">
                     <div class="repairs-package" data-emergence="hidden">
-                      <div class="repairs-package__image"><img class="js-parallax" src="assets/images/repairs-packages/3.jpg" alt="">
+                      <div class="repairs-package__image"><img class="js-parallax js-lazy" data-src="assets/images/repairs-packages/3.jpg" alt="">
                       </div>
                       <div class="repairs-package__bottom">
                         <p class="repairs-package__title">Премиум
@@ -447,7 +452,7 @@
                     </h3>
                     <div class="service-title-block" data-emergence="hidden">
                       <h3 class="service-title-block__title">Строительство домов
-                      </h3><img src="assets/images/home.jpg" alt="">
+                      </h3><img class="js-lazy" data-src="assets/images/home.jpg" alt="">
                     </div>
                   </div>
                   <div class="section-description__col">
@@ -511,7 +516,7 @@
               <div class="construction-tilt">
                 <div class="construction-tilt__row">
                   <div class="construction-tilt__col-large">
-                    <div class="construction-tilt-item" data-emergence="hidden"><img class="js-parallax" src="assets/images/tilt/1.jpg" alt=""><img src="assets/images/tilt/1-sm.jpg" alt="">
+                    <div class="construction-tilt-item" data-emergence="hidden"><img class="js-parallax js-lazy" data-src="assets/images/tilt/1.jpg" alt=""><img class="js-lazy" data-src="assets/images/tilt/1-sm.jpg" alt="">
                       <div class="construction-tilt-item__content">
                         <p class="construction-tilt-item__title">«МАГИСТР»
                         </p>
@@ -526,7 +531,7 @@
                 </div>
                 <div class="construction-tilt__row">
                   <div class="construction-tilt__col">
-                    <div class="construction-tilt-item" data-emergence="hidden"><img class="js-parallax-right" src="assets/images/tilt/2.jpg" alt=""><img src="assets/images/tilt/2-sm.jpg" alt="">
+                    <div class="construction-tilt-item" data-emergence="hidden"><img class="js-parallax-right js-lazy" data-src="assets/images/tilt/2.jpg" alt=""><img class="js-lazy" data-src="assets/images/tilt/2-sm.jpg" alt="">
                       <div class="construction-tilt-item__content">
                         <p class="construction-tilt-item__title">«СЕНЬОР»
                         </p>
@@ -539,7 +544,7 @@
                     </div>
                   </div>
                   <div class="construction-tilt__col">
-                    <div class="construction-tilt-item" data-emergence="hidden"><img class="js-parallax" src="assets/images/tilt/3.jpg" alt=""><img src="assets/images/tilt/3-sm.jpg" alt="">
+                    <div class="construction-tilt-item" data-emergence="hidden"><img class="js-parallax js-lazy" data-src="assets/images/tilt/3.jpg" alt=""><img class="js-lazy" fata-src="assets/images/tilt/3-sm.jpg" alt="">
                       <div class="construction-tilt-item__content">
                         <p class="construction-tilt-item__title">«ВЕЛЬМОЖА»
                         </p>
@@ -757,6 +762,10 @@
           </div>
         </div>
       </div>
+      <!-- To begining--><a class="to-begining hide js-scrollTo-begining">
+      <svg class="svg-icon">
+        <use href="assets/icons/sprite.svg#icon-arrow"></use>
+      </svg><span>В начало</span></a>
     </main>
     <script src="assets/js/app.js"></script>
   </body>
