@@ -2699,7 +2699,8 @@ section {
       }
     }
   }
-  &__subtitle , &__subtitle-bold{
+  &__subtitle,
+  &__subtitle-bold {
     font-weight: 500;
     font-size: 16px;
     line-height: 130%;
@@ -2707,7 +2708,7 @@ section {
       margin-bottom: 5px;
     }
   }
-  &__subtitle-bold{
+  &__subtitle-bold {
     font-weight: 700;
     margin-bottom: 10px;
   }
@@ -3306,5 +3307,17 @@ section {
 .footer {
   @include sm-block() {
     margin-bottom: 40px;
+  }
+}
+
+.page-about {
+  .breadcrumbs {
+    margin-bottom: 30px;
+    @include sm-block() {
+      margin-bottom: 0;
+    }
+  }
+  .page-text-section {
+    padding-top: 0;
   }
 }

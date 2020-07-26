@@ -8,19 +8,37 @@ block variables
 
 block content
     // WEBSITE
-    +b.content.page-index
+    +b.content.page-about
         include ../includes/modules/header
         +b.SECTION.breadcrumbs
             .container
                 +e.A(href="/") Главная
                 +e.SPAN.separator
                 span О нас
+
+        +b.SECTION.media-section( data-emergence="hidden")
+            .container
+                +e.row
+                    +e.media
+                        img(src="assets/images/content/about1.jpg", alt="").js-parallax-scroll
+                    +e.content
+                        +e.H3.title.color-primary Риф.ug
+                        .typography
+                            p Ремонтно-строительная компания с многолетним опытом. 
         +b.SECTION.page-text-section
             .container
                 .typography
-                    h3 Заголовок H3
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nihil quia ab amet vitae labore maxime quibusdam alias nam error ea, nobis autem similique molestias temporibus dolore placeat quasi expedita!
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt assumenda necessitatibus non architecto laborum sequi voluptatem accusamus ducimus? Nisi ad nam atque? Temporibus nam tenetur ipsum quasi officia qui officiis.
+                    //- img(src="assets/images/content/about1.jpg", alt="")
+                    //- p <strong class="color-primary">Риф.ug</strong>  Ремонтно-строительная компания с многолетним опытом. 
+                    p Мы разрабатываем и реализуем проекты квартир, загородных домов, коттеджей, торговых и офисных помещений. В основе нашей деятельности лежит профессионализм, внимание к деталям и стремление к совершенству. 
+                    p В состав нашего проекта входят фотореалистичные 3D визуализации, детальные чертежи для строителей, подбор современных и качественных отделочных материалов, а также контроль всех этапов ремонта. 
+                    p Наша команда- это союз единомышленников. В нее входят архитектор, дизайнеры, мебельщики и профессиональные рабочие.
+                    //-img(src="assets/images/content/about2.jpg", alt="")
+                    p <strong class="color-primary">Риф.ug</strong>  - это творческий союз. Главная наша задача, чтобы результат потраченного времени, сил и средств превзошел все ваши ожидания. 
+                    p Мы разработаем и реализуем проект с учетом ваших пожеланий по стилю и точно в рамках бюджета. 
+                    p Гарантия на все виды работ 1 год. 
+                    p 100% точность в расчетах и сроках. 
+
         include ../includes/modules/answer
         include ../includes/modules/footer
 
