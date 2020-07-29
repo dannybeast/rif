@@ -745,6 +745,8 @@ body {
     margin-bottom: 50px;
   }
   @include sm-block() {
+    background: url("../images/answers-bg-sm.jpg") center no-repeat;
+    background-size: cover;
     margin-bottom: 0;
   }
   &__block {
@@ -3307,6 +3309,24 @@ section {
 .footer {
   @include sm-block() {
     margin-bottom: 40px;
+  }
+}
+
+.package {
+  &__gallery {
+    @include sm-block() {
+      display: none;
+    }
+  }
+  &__image-sm {
+    display: none;
+    img {
+      width: 100%;
+    }
+    @include sm-block() {
+      display: block;
+      margin-bottom: 15px;
+    }
   }
 }
 

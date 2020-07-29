@@ -20,7 +20,7 @@ block content
                 .container
                     +e.H2.title 
                         span Ремонт бывает с таким завершением
-            img(src="assets/images/intro/repairs.jpg", alt="").js-parallax
+            img(src="assets/images/intro/repairs.jpg", alt="")
         +b.SECTION.page-preview( data-emergence="hidden")
             .container
                 +e.H3.title Перед осуществлением ремонта, наши специалисты бесплатно приедут на объект для того, чтобы оценить:
@@ -49,6 +49,8 @@ block content
                         // Базовый
                         div.js-tab-content
                             +b.package
+                                +e.image-sm
+                                    img(src="assets/images/repairs-packages/1-sm.jpg", alt="")
                                 +e.UL.gallery
                                     .swiper-container.swiper-no-swiping
                                         .swiper-wrapper
@@ -101,6 +103,8 @@ block content
                         // Комфорт
                         div.js-tab-content
                             +b.package
+                                +e.image-sm
+                                    img(src="assets/images/repairs-packages/2-sm.jpg", alt="")
                                 +e.UL.gallery
                                     .swiper-container
                                         .swiper-wrapper
@@ -150,8 +154,10 @@ block content
                                     +e.LI Детская корпусная мебель – 54000₽ 
                                     +e.LI Спальный гарнитур - 40250₽ 
                         // Премиум        
-                        div.js-tab-content
+                        div.js-tab-content  
                             +b.package
+                                +e.image-sm
+                                    img(src="assets/images/repairs-packages/3-sm.jpg", alt="")
                                 +e.UL.gallery
                                     .swiper-container
                                         .swiper-wrapper

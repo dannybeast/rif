@@ -1,9 +1,10 @@
 /* SmtpJS.com - v3.0.0 */
 
 export const Data = {
-  from: "webkrd@mail.ru",
-  to: "webkrd@mail.ru",
-  SecureToken: "f832c81e-ef7c-4d81-adf5-c37102572c14",
+  from: "info@rif.ug",
+  to: "info@rif.ug",
+  SecureToken: "e61b1d9a-0b9e-41ab-aa08-c1e6feb9d3ad",
+  // 7b843dcd-83cd-4633-9a84-4cb9b1b4b0d4
 };
 export const Email = {
   send: function(a) {

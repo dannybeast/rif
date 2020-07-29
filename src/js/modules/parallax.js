@@ -6,26 +6,28 @@ export default function() {
   var imageScrollVertical = document.getElementsByClassName(
     "js-parallax-scroll-vertical"
   );
-
-  new simpleParallax(image, {
-    delay: 0.8,
-    transition: "cubic-bezier(0,0,0,1)",
-  });
-  new simpleParallax(imageRight, {
-    delay: 0.8,
-    transition: "cubic-bezier(0,0,0,1)",
-    orientation: "right",
-  });
-  new simpleParallax(imageScroll, {
-    overflow: true,
-    delay: 0.8,
-    //transition: "cubic-bezier(0,0,0,1)",
-    orientation: "right",
-  });
-  new simpleParallax(imageScrollVertical, {
-    overflow: true,
-    delay: 0.8,
-    //transition: "cubic-bezier(0,0,0,1)",
-    orientation: "down",
-  });
+  console.log($(window).width());
+  if ($(window).width() > 767) {
+    new simpleParallax(image, {
+      delay: 0.8,
+      transition: "cubic-bezier(0,0,0,1)",
+    });
+    new simpleParallax(imageRight, {
+      delay: 0.8,
+      transition: "cubic-bezier(0,0,0,1)",
+      orientation: "right",
+    });
+    new simpleParallax(imageScroll, {
+      overflow: true,
+      delay: 0.8,
+      //transition: "cubic-bezier(0,0,0,1)",
+      orientation: "right",
+    });
+    new simpleParallax(imageScrollVertical, {
+      overflow: true,
+      delay: 0.8,
+      //transition: "cubic-bezier(0,0,0,1)",
+      orientation: "down",
+    });
+  }
 }
