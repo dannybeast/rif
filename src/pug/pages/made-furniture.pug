@@ -40,24 +40,27 @@ block content
                 .container
                     +e.H3.title.hidden-sm(data-emergence="hidden") Мебель под заказ
                     +e.row
-                        +e.col.hidden-sm
+                        +e.col
                             section
                                 +b.quote(data-emergence="hidden") 
                                     p Мы индивидуально подбираем дизайн и материалы, исходя из вашего бюджета
-                                img(src="assets/images/furniture/1.jpg", alt="").js-parallax
+                                +e.image-wrap
+                                    img(src="assets/images/furniture/1.jpg", alt="").js-parallax
                             section
                                 +b.quote(class="--before-line" data-emergence="hidden") 
                                     p К каждому проекту готовится технический задание, с точными размерами и подбором мебельной фурнитуры и материалов
-                                img(src="assets/images/furniture/2.jpg", alt="").js-parallax
+                                +e.image-wrap
+                                    img(src="assets/images/furniture/2.jpg", alt="").js-parallax
                         +e.col
-                            section.hidden-sm
+                            section
                                 .typography(data-emergence="hidden") 
                                     p Разработайте вместе с нашими дизайнерами уникальную мебель для вашего дома или квартиры. Широкий выбор материалов, фурнитуры и форм помогут удовлетворить самый взыскательный вкус.
                                     p Мы  полонстью контролируем весь процесс создания мебели. Это помогает избежать брака.
-                            section.hidden-sm
+                            section
                                 +b.quote(class="--before-line" data-emergence="hidden") 
                                     p Собственное производство — лучшее доказательство широких технических возможностей
-                                img(src="assets/images/furniture/3.jpg", alt="").js-parallax-right
+                                +e.image-wrap
+                                    img(src="assets/images/furniture/3.jpg", alt="").js-parallax-right
                             +b.SECTION.steps(data-emergence="hidden")
                                 +e.H3.title Порядок работы
                                 +b.step

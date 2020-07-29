@@ -3010,6 +3010,17 @@ section {
       font-size: 12px;
     }
   }
+  &__image-wrap {
+    @include sm-block() {
+      margin-left: -15px;
+      margin-right: -15px;
+      max-height: 450px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+  }
   &__col {
     width: 50%;
     max-width: 513px;
