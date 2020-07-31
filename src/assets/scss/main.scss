@@ -2267,9 +2267,12 @@ section {
 .page-intro {
   position: relative;
   margin-top: -1px;
+
   @include sm-block() {
-    display: none;
+    display: flex;
+    flex-direction: column;
   }
+
   &__title {
     font-weight: 900;
     font-size: 40px;
@@ -2285,7 +2288,14 @@ section {
       font-size: 25px;
       padding: 30px 40px 30px 0;
     }
-
+    @include sm-block() {
+      font-size: 16px;
+      font-weight: 500;
+      text-align: center;
+      padding: 15px 10px;
+      order: 2;
+      width: 100%;
+    }
     &:before {
       content: "";
       width: 9999px;
@@ -2296,11 +2306,28 @@ section {
       display: block;
       background: inherit;
     }
+    &:after {
+      content: "";
+      width: 9999px;
+      height: 100%;
+      position: absolute;
+      left: 100%;
+      top: 0;
+      display: none;
+      background: inherit;
+      @include sm-block() {
+        display: block;
+      }
+    }
     span {
       display: block;
       max-width: 468px;
       @include lg-block() {
         max-width: 300px;
+      }
+      @include sm-block() {
+        margin: 0 auto;
+        display: block;
       }
     }
   }
@@ -2313,9 +2340,25 @@ section {
     display: flex;
     align-items: center;
     z-index: 2;
+    @include sm-block() {
+      position: relative;
+      width: 100%;
+      order: 2;
+    }
   }
   img {
     width: 100%;
+    @include sm-block() {
+      width: 150%;
+      max-width: initial;
+    }
+  }
+  &__image {
+    @include sm-block() {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
 
